@@ -1,0 +1,135 @@
+ body{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+#header{
+    background:#0a38c2;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation{
+    display: flex;
+    background: #67B4F8;
+}
+
+.main-menu{
+    justify-content: flex-start;
+    display: flex;
+    list-style: none;
+    margin: 0px;
+}
+
+.menu-link{
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-link:hover{
+    
+    background: #0a38c2;
+}
+
+.modulo-ricerca{
+    margin: auto 10px auto auto;
+}
+
+.campo-ricerca{
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+
+@media all and (max-width: 700px) {
+    .navigation, .main-menu {
+        padding: 0px;
+        flex-direction: column;
+        }
+        .menu-item{
+            padding: 3px 0px;
+            
+        }
+        .modulo-ricerca{
+            display: flex;
+            order: -1;
+            margin-top: 10px;
+        }
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+
+.card-container{
+color: black;
+display: flex;
+flex-basis: 100%;
+flex-direction: column;
+width: 180px;
+margin: 10px;
+}
+
+.tre-col{
+    display: flex;
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+}
+
+.due-col{
+    display: flex;
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+}
+
+.box{
+    background: #67B4F8;
+    max-width: 100%;
+    width: 100%;
+    height: 160px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-link{
+    text-decoration: none;
+    background: #67B4F8;
+    color: white;
+    align-items: center;
+    margin-top: auto;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+/*stile colonne per mobile*/
+@media all and (max-width: 700px) {
+    .tre-col {
+    flex-wrap: wrap;
+    }
+    }
+    
+    @media all and (max-width: 550px) {
+    .due-col {
+    flex-wrap: wrap;
+    }
+    }
+    
+
+
+#footer{
+    background: #0a38c2;
+}
