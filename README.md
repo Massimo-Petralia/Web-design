@@ -2,5 +2,5 @@
 
 <h1>Flexbox-layout</h1>
 <img src="
-        /touristic-site/screenshot.jpg
+        /Massimo-Petralia/touristic-site/blob/develop/screenshot.jpg?raw=true
       ">
