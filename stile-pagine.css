@@ -100,6 +100,12 @@ body{
     }
     }
 
+@media all and (max-width: 700px) {
+    .tre-col{
+        flex-wrap: wrap;
+    }
+}    
+
 #footer{
     background: #0a38c2;
 }
