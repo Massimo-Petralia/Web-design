@@ -102,7 +102,8 @@ body{
 
 @media all and (max-width: 700px) {
     .tre-col{
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
+        flex-direction: column;
     }
 }    
 
