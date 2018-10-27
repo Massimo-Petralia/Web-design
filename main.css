@@ -139,7 +139,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*width: 180px;*/
   margin: 10px;
 }
 
