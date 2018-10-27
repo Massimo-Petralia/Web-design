@@ -1,4 +1,5 @@
  body{
+     margin: 0px 100px;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
@@ -68,6 +69,9 @@
 
 /*stile navigazione per mobile*/
 @media all and (max-width: 700px) {
+    body {
+        margin: auto;
+    }
     .navigation, .main-menu {
         padding: 0px;
         flex-direction: column;
@@ -95,7 +99,6 @@ color: black;
 display: flex;
 flex-basis: 100%;
 flex-direction: column;
-width: 180px;
 margin: 10px;
 }
 
@@ -138,12 +141,18 @@ margin: 10px;
 
 /*stile colonne per mobile*/
 @media all and (max-width: 700px) {
+    body {
+        margin: auto;
+    }
     .tre-col {
     flex-wrap: wrap;
     }
     }
     
     @media all and (max-width: 550px) {
+        body {
+            margin: auto;
+        }
     .due-col {
     flex-wrap: wrap;
     }
