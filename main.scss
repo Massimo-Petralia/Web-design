@@ -8,8 +8,28 @@
 #header{
     background:#0a38c2;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    .logo-svg {
+        .logo-triangle {
+            fill: #67B4F8;
+        }
+        padding-bottom: 5px;
+        fill: none;
+        stroke: white;
+        stroke-width: 2px;
+        stroke-linecap: square;
+        stroke-linejoin: bevel;
+    }
+    .text-logo {
+        display: flex;
+        flex-direction: column;
+    }
+ }
 
 .navigation{
     display: flex;
@@ -46,6 +66,7 @@
     padding-left: 10px;
 }
 
+/*stile navigazione per mobile*/
 @media all and (max-width: 700px) {
     .navigation, .main-menu {
         padding: 0px;
