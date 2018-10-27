@@ -18,8 +18,11 @@
         padding-bottom: 5px;
         fill: white;
     }
-    
-}
+    .text-logo {
+        display: flex;
+        flex-direction: column;
+    }
+ }
 
 .navigation{
     display: flex;
