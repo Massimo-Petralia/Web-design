@@ -12,10 +12,13 @@
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     .logo-svg {
+        padding-bottom: 5px;
         fill: white;
     }
-    display: flex;
+    
 }
 
 .navigation{
