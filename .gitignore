@@ -32,7 +32,7 @@ testem.log
 Thumbs.db
 
 # Sass map files
-*.css.map
+*.plain
 
 
 # Created by https://www.gitignore.io/api/images
