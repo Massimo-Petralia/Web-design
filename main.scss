@@ -11,6 +11,13 @@
     justify-content: center;
 }
 
+.logo {
+    .logo-svg {
+        fill: white;
+    }
+    display: flex;
+}
+
 .navigation{
     display: flex;
     background: #67B4F8;
