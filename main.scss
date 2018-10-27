@@ -15,12 +15,15 @@
     display: flex;
     align-items: center;
     .logo-svg {
+        .logo-triangle {
+            fill: #67B4F8;
+        }
         padding-bottom: 5px;
         fill: none;
         stroke: white;
-        stroke-width: 2.5px;
-        stroke-linecap: round;
-        stroke-linejoin: round;
+        stroke-width: 2px;
+        stroke-linecap: square;
+        stroke-linejoin: bevel;
     }
     .text-logo {
         display: flex;
