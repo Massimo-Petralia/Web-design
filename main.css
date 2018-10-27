@@ -92,6 +92,7 @@ body {
   padding-left: 10px;
 }
 
+/*stile navigazione per mobile*/
 @media all and (max-width: 700px) {
   .navigation, .main-menu {
     padding: 0px;
