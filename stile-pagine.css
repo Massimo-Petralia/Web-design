@@ -1,113 +1,145 @@
-body{
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    color: white;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
 }
 
-#header{
-    background: #0a38c2;
-    display: flex;
-    justify-content: center;
+#header {
+  background: #0a38c2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.navigation{
-    display: flex;
-    background: #67B4F8;
-    
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #67B4F8;
 }
 
-.main-menu{
-    justify-content: flex-start;
-    display: flex;
-    list-style: none;
-    margin: 0px;
+.main-menu {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0px;
 }
 
-.menu-link{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 10px;
-    display: block;
+.menu-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: block;
 }
 
-.menu-link:hover{
-    background: #0a38c2;
+.menu-link:hover {
+  background: #0a38c2;
 }
 
-.modulo-ricerca{
-    margin: auto 10px auto auto;
+.modulo-ricerca {
+  margin: auto 10px auto auto;
 }
 
-.campo-ricerca{
-    outline: none;
-    border-radius: 5px;
-    padding-left: 5px;
+.campo-ricerca {
+  outline: none;
+  border-radius: 5px;
+  padding-left: 5px;
 }
 
 /*stile navigazione per mobile*/
 @media all and (max-width: 700px) {
-    .navigation, .main-menu {
-        padding: 0px;
-        flex-direction: column;
-        }
-        .menu-item{
-            padding: 3px 0px;
-            
-        }
-        .modulo-ricerca{
-            display: flex;
+  .navigation, .main-menu {
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-item {
+    padding: 3px 0px;
+  }
+  .modulo-ricerca {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
             order: -1;
-            margin-top: 10px;
-        }
+    margin-top: 10px;
+  }
 }
 
-#page-header{
-    background: #0a38c2;
-    display: flex;
-    justify-content: ;
-    height: 160px;
+#page-header {
+  background: #0a38c2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 160px;
 }
 
-.card-container{
-    color: black;
-    margin: 0px 10px;
+.card-container {
+  color: black;
+  margin: 0px 10px;
 }
 
-.due-col{
-    display: flex;
-    justify-content: space-around;
-    text-align: justify; 
+.due-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: justify;
 }
 
-.tre-col{
-    display: flex;
-    width: 100%;
-    margin: 0px 0px 5px 0px;
-    justify-content: space-around;
+.tre-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0px 0px 5px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-
-.argomenti{
-    display: flex;
+.argomenti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*stile colonne per mobile*/
 @media all and (max-width: 550px) {
-    .due-col {
-    flex-wrap: wrap;
-    }
-    }
-
-@media all and (max-width: 700px) {
-    .tre-col{
-        /*flex-wrap: wrap;*/
-        flex-direction: column;
-    }
-}    
-
-#footer{
-    background: #0a38c2;
+  .due-col {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
+@media all and (max-width: 700px) {
+  .tre-col {
+    /*flex-wrap: wrap;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#footer {
+  background: #0a38c2;
+}
+/*# sourceMappingURL=stile-pagine.css.map */
