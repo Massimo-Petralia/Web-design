@@ -31,11 +31,13 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Sass map files
-*.plain
 
 
 # Created by https://www.gitignore.io/api/images
+
+# Sass map files
+*.plain
+
 
 ### Images ###
 # JPEG
