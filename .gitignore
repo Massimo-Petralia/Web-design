@@ -35,8 +35,8 @@ Thumbs.db
 
 # Created by https://www.gitignore.io/api/images
 
-# Sass map files
-*.plain
+# Sass
+*.map
 
 
 ### Images ###
