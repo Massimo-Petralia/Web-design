@@ -11,7 +11,7 @@ body {
 }
 
 #header {
-  background: purple;
+  background: #0a38c2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
