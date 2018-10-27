@@ -15,9 +15,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .logo {
@@ -31,7 +31,11 @@ body {
 
 .logo .logo-svg {
   padding-bottom: 5px;
-  fill: white;
+  fill: none;
+  stroke: white;
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .logo .text-logo {
