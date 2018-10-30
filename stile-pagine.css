@@ -147,7 +147,12 @@ body {
   height: 160px;
 }
 
-.page-heading, .sottotitolo-page {
+.page-heading {
+  z-index: 1;
+  height: 50px;
+}
+
+.sottotitolo-page {
   z-index: 1;
 }
 
