@@ -153,12 +153,17 @@ body {
   background: #67B4F8;
   padding-right: 30px;
   padding-left: 5px;
-  border-right: 5px solid orange;
+  border-right: 10px solid orange;
   border-bottom-right-radius: 50px 100px;
 }
 
 .sottotitolo-page {
   z-index: 1;
+}
+
+.title-section {
+  padding-left: 5px;
+  border-left: 15px solid orange;
 }
 
 .card-container {
