@@ -7,13 +7,21 @@
 }
 
 #header{
-    background:#0a38c2;
+    .gradient{
+        background: linear-gradient(to right, #0a38c2 25%, transparent 50%);
+        position: absolute;
+        width: 100%;
+        height: 132px;
+    }
+    position: relative;
+    background-color:#0a38c2;
     display: flex;
     justify-content: flex-start;
     background: url(imm/header-background.jpg)
 }
 
 .logo {
+    z-index: 1;
     display: flex;
     align-items: center;
     .logo-svg {
