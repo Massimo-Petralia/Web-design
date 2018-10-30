@@ -98,10 +98,23 @@ body{
 
 
 #page-header{
-    background: #0a38c2;
-    display: flex;
+    .gradient-page-header{
+        background: linear-gradient(to right, #0a38c2 0%, transparent 100%);
+        position: absolute;
+        width: 100%;
+        height: 160px;
+    }
     
-height: 160px;
+    position: relative;
+    display: flex;
+    background: url(imm/background-nebrodi-page-header.jpg);
+    //background-size: 100% 100%;
+    background-position-x: right;
+    height: 160px;
+}
+
+.page-heading, .sottotitolo-page{
+    z-index: 1;
 }
 
 .card-container{

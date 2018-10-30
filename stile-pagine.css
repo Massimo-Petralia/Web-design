@@ -129,11 +129,25 @@ body {
 }
 
 #page-header {
-  background: #0a38c2;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: url(imm/background-nebrodi-page-header.jpg);
+  background-position-x: right;
   height: 160px;
+}
+
+#page-header .gradient-page-header {
+  background: -webkit-gradient(linear, left top, right top, from(#0a38c2), to(transparent));
+  background: linear-gradient(to right, #0a38c2 0%, transparent 100%);
+  position: absolute;
+  width: 100%;
+  height: 160px;
+}
+
+.page-heading, .sottotitolo-page {
+  z-index: 1;
 }
 
 .card-container {
