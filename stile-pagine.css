@@ -30,6 +30,39 @@ body {
   height: 132px;
 }
 
+.logo {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo .logo-svg {
+  padding-bottom: 5px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+  stroke-linecap: square;
+  stroke-linejoin: bevel;
+}
+
+.logo .logo-svg .logo-triangle {
+  fill: #67B4F8;
+}
+
+.logo .text-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
