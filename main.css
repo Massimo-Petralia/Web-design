@@ -20,7 +20,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background: url(imm/header-background-1.jpg) 100%;
+  background: url(imm/header-background-1.jpg);
+  background-size: 100% 100%;
+  background-position-x: 0px;
 }
 
 #header .gradient {
