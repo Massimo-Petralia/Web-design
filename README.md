@@ -1,4 +1,7 @@
 # touristic-site
+
+![Uploading pages-layout.png…]()
+
 ## logo svg (code)
 ![logo-svg-code](https://user-images.githubusercontent.com/44479460/47608173-f1cc1c00-da29-11e8-8550-58adafd038ac.png)
 ## logo svg
