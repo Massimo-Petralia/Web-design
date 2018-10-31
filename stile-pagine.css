@@ -157,6 +157,10 @@ body {
   border-bottom-right-radius: 50px 100px;
 }
 
+.iblei-title-style {
+  border-color: red;
+}
+
 .sottotitolo-page {
   z-index: 1;
 }
