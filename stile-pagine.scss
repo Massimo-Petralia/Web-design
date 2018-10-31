@@ -112,15 +112,27 @@ body{
     display: flex;
     height: 160px;
     margin-top: 10px;
+    
 }
 
 .page-heading{ 
     z-index: 1;
     height: 50px;
-    
+    background: #67B4F8;
+    padding-right: 30px;
+    padding-left: 5px;
+    border-right: 10px solid orange;
+    border-bottom-right-radius: 50px 100px;    
 }
 .sottotitolo-page {
     z-index: 1;
+}
+
+.title-section {
+    padding-left: 10px;
+    border-left: 15px solid orange;
+    border-bottom: 1px solid orange;
+    
 }
    
   
