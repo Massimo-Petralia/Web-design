@@ -157,6 +157,56 @@ body {
   border-bottom-right-radius: 50px 100px;
 }
 
+.nebrodi-title-style {
+  border-color: green;
+}
+
+.nebrodi-section-style {
+  padding-left: 10px;
+  border-left: 15px solid green;
+  border-bottom: 1px solid green;
+}
+
+.peloritani-title-style {
+  border-color: yellow;
+}
+
+.peloritani-section-style {
+  padding-left: 10px;
+  border-left: 15px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+
+.sentieri-title-style {
+  border-color: violet;
+}
+
+.sentieri-section-style {
+  padding-left: 10px;
+  border-left: 15px solid violet;
+  border-bottom: 1px solid violet;
+}
+
+.prodotti-locali-title-style {
+  border-color: purple;
+}
+
+.prodotti-locali-section-style {
+  padding-left: 10px;
+  border-left: 15px solid purple;
+  border-bottom: 1px solid purple;
+}
+
+.iblei-title-style {
+  border-color: red;
+}
+
+.iblei-section-style {
+  padding-left: 10px;
+  border-left: 15px solid red;
+  border-bottom: 1px solid red;
+}
+
 .sottotitolo-page {
   z-index: 1;
 }
