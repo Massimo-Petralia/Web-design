@@ -217,6 +217,8 @@ body {
   padding-left: 10px;
   border-left: 15px solid red;
   border-bottom: 1px solid red;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(5%, transparent));
+  background-image: linear-gradient(to right, red 0%, transparent 5%);
 }
 
 .sottotitolo-page {
