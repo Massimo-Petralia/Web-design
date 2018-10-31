@@ -158,6 +158,7 @@ body {
   padding-left: 5px;
   border-right: 10px solid orange;
   border-bottom-right-radius: 50px 100px;
+  line-height: 1.5;
 }
 
 .nebrodi-title-style {
