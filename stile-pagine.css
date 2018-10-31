@@ -130,6 +130,10 @@ body {
   }
 }
 
+#content {
+  margin-top: 10px;
+}
+
 #page-header {
   position: relative;
   display: -webkit-box;
