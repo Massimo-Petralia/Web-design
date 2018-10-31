@@ -165,6 +165,8 @@ body {
   border-right: 10px solid orange;
   border-bottom-right-radius: 50px 100px;
   line-height: 1.5;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0a38c2), color-stop(30%, transparent));
+  background-image: linear-gradient(to right, #0a38c2 0%, transparent 30%);
 }
 
 .nebrodi-title-style {
