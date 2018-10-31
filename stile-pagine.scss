@@ -46,9 +46,8 @@ body{
 
 
 .navigation{
-    margin-top: 5px;
     display: flex;
-    background: #67B4F8;
+    background: mediumseagreen;
     
 }
 
@@ -120,19 +119,19 @@ body{
 .page-heading{ 
     z-index: 1;
     height: 50px;
-    background: #67B4F8;
+    background: mediumseagreen;
     padding-right: 30px;
     padding-left: 5px;
     border-right: 10px solid orange;
     border-bottom-right-radius: 50px 100px;    
 }
 .nebrodi-title-style {
-    border-color: green;
+    border-color: orange;
 }
 .nebrodi-section-style {
     padding-left: 10px;
-    border-left: 15px solid green;
-    border-bottom: 1px solid green;
+    border-left: 15px solid orange;
+    border-bottom: 1px solid orange;
 }
 .peloritani-title-style {
     border-color: yellow;
