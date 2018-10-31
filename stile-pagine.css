@@ -150,6 +150,10 @@ body {
   height: 160px;
 }
 
+#page-header .sottotitolo-page {
+  padding-left: 20px;
+}
+
 .page-heading {
   z-index: 1;
   height: 50px;
