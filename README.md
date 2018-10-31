@@ -1,6 +1,7 @@
 # touristic-site
 
-![Uploading pages-layout.png…]()
+## Layout-pages
+![pages-layout](https://user-images.githubusercontent.com/44479460/47819942-3e7e6280-dd5c-11e8-9ef6-902e0abc8f24.png)
 
 ## logo svg (code)
 ![logo-svg-code](https://user-images.githubusercontent.com/44479460/47608173-f1cc1c00-da29-11e8-8550-58adafd038ac.png)
