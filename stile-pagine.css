@@ -297,6 +297,11 @@ body {
   width: 100%;
 }
 
+.map-box {
+  height: 100%;
+  background: #67B4F8;
+}
+
 /*stile colonne per mobile*/
 @media all and (max-width: 550px) {
   body {
