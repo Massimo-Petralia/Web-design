@@ -1,4 +1,15 @@
+@font-face {
+    font-family: 'cagliostro';
+    src: url('font/cagliostro-regular-webfont.eot');
+    src: local(':D'),
+    url('font/cagliostro-regular-webfont.woff') format('woff'),
+    url('font/Cagliostro-Regular.ttf') format('truetype');
+
+}
+
+ 
  body{
+    font-family: cagliostro, arial, verdana, sans-serif;
     margin: 0px 200px;
     display: flex;
     justify-content: center;
