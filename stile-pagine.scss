@@ -1,5 +1,5 @@
 body{
-    margin: 0px 200px;
+    margin: 0px 195px;
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -83,6 +83,9 @@ body{
 
 /*stile navigazione per mobile*/
 @media all and (max-width: 700px) {
+    body {
+        margin: 0px auto;
+    }
     .navigation, .main-menu {
         padding: 0px;
         flex-direction: column;
@@ -99,7 +102,10 @@ body{
 }
 
 #content{
+    display: flex;
+    flex-wrap: wrap;
     margin-top:10px;
+    flex-direction: column;
     
 }
 
@@ -188,6 +194,12 @@ body{
 .card-container{
     color: black;
     margin: 0px 10px;
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.una-col {
+    
 }
 
 .due-col{
@@ -207,14 +219,31 @@ body{
     display: flex;
 }
 
+.flex {
+    max-width: 100%;
+}
+
+.box {
+    background: #67B4F8;
+    max-width: 100%;
+    max-height: 200px;
+
+}
+
 /*stile colonne per mobile*/
 @media all and (max-width: 550px) {
+    body {
+        margin: 0px auto;
+    }
     .due-col {
     flex-wrap: wrap;
     }
     }
 
 @media all and (max-width: 700px) {
+    body {
+        margin: 0px auto;
+    }
     .tre-col{
         /*flex-wrap: wrap;*/
         flex-direction: column;
