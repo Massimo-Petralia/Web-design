@@ -283,9 +283,13 @@ body {
 }
 
 .box {
-  background: #67B4F8;
   max-width: 100%;
   max-height: 200px;
+}
+
+.box .border-img-style {
+  border-bottom-right-radius: 50px 100px;
+  border-right: 10px solid mediumseagreen;
 }
 
 /*stile colonne per mobile*/
