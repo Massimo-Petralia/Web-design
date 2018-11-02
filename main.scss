@@ -151,6 +151,8 @@ margin: 10px;
 }
 
 .box{
+    display: flex;
+    flex-wrap: wrap;
     background: #67B4F8;
     max-width: 100%;
     /*width: 100%;*/
@@ -186,7 +188,7 @@ margin: 10px;
     padding: 0px 30px 0px 5px;
     color: white;
     background: #0a38c2;
-    flex-basis: 50%;
+    
 }
 
 /*stile colonne per mobile*/
