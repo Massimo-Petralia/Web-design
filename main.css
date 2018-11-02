@@ -205,6 +205,10 @@ body {
   padding: 5px 0px;
 }
 
+.flex {
+  max-width: 100%;
+}
+
 /*stile colonne per mobile*/
 @media all and (max-width: 700px) {
   body {
