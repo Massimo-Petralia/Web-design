@@ -228,6 +228,16 @@ body {
   max-width: 100%;
 }
 
+.box-heading {
+  position: relative;
+  bottom: 180px;
+  padding: 0px 30px 0px 5px;
+  color: white;
+  background: #0a38c2;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
 /*stile colonne per mobile*/
 @media all and (max-width: 700px) {
   body {
