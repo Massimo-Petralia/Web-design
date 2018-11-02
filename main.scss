@@ -1,9 +1,18 @@
 @font-face {
     font-family: 'cagliostro';
-    src: url('font/cagliostro-regular-webfont.eot');
+    src: url('font-test/cagliostro-regular-webfont.eot');
     src: local(':D'),
-    url('font/cagliostro-regular-webfont.woff') format('woff'),
-    url('font/Cagliostro-Regular.ttf') format('truetype');
+    url('font-test/cagliostro-regular-webfont.woff') format('woff'),
+    url('font-test/Cagliostro-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'nunito-semibold';
+    src: url('font-test/nunito-semibold-webfont.eot');
+    src: local(':D'),
+    url('font-test/nunito-semibold-webfont.woff') format('woff'),
+    url('font-test/nunito-semibold.ttf') format('truetype');
 
 }
 
@@ -16,6 +25,10 @@
     box-sizing: border-box;
     color: white;
 }
+
+.logo-heading, .heading-subtitle {
+    font-family: nunito-semibold;
+} 
 
 #header{
     .gradient{
