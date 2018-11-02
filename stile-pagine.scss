@@ -224,9 +224,13 @@ body{
 }
 
 .box {
-    background: #67B4F8;
+    //background: #67B4F8;
     max-width: 100%;
     max-height: 200px;
+    .border-img-style {
+        border-bottom-right-radius: 50px 100px;
+        border-right: 10px solid mediumseagreen;
+    }
 
 }
 
