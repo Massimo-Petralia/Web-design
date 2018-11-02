@@ -88,6 +88,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   background: mediumseagreen;
+  background-image: -webkit-gradient(linear, right top, left top, from(#0a38c2), color-stop(30%, transparent));
+  background-image: linear-gradient(to left, #0a38c2 0%, transparent 30%);
 }
 
 .main-menu {
