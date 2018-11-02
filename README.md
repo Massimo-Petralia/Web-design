@@ -1,5 +1,9 @@
 # touristic-site
 
+## Home-style
+![home-style](https://user-images.githubusercontent.com/44479460/47934020-7a3d3780-ded6-11e8-9b34-dab46ad5e5f8.png)
+
+
 ## Layout-pages
 ![pages-layout](https://user-images.githubusercontent.com/44479460/47819942-3e7e6280-dd5c-11e8-9ef6-902e0abc8f24.png)
 
