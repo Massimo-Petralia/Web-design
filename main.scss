@@ -196,6 +196,14 @@ margin: 10px;
     
 }
 
+.subtitle-box-heading {
+    position: relative;
+    //flex: 0;
+    bottom: 150px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
 /*stile colonne per mobile*/
 @media all and (max-width: 700px) {
     body {

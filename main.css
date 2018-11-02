@@ -248,6 +248,13 @@ body {
   background-image: linear-gradient(to right, mediumseagreen 0%, transparent 35%);
 }
 
+.subtitle-box-heading {
+  position: relative;
+  bottom: 150px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
 /*stile colonne per mobile*/
 @media all and (max-width: 700px) {
   body {
