@@ -250,6 +250,7 @@ body {
 }
 
 .box-heading {
+  font-style: oblique;
   position: relative;
   bottom: 180px;
   padding: 0px 30px 0px 5px;
@@ -264,6 +265,9 @@ body {
 
 .subtitle-box-heading {
   font-style: oblique;
+  border-bottom: #0a38c2 1px solid;
+  border-left: #0a38c2 15px solid;
+  padding-left: 5px;
 }
 
 /*stile colonne per mobile*/
