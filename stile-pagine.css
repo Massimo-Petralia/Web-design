@@ -285,12 +285,16 @@ body {
 
 .box {
   max-width: 100%;
-  max-height: 200px;
 }
 
 .box .border-img-style {
   border-bottom-right-radius: 50px 100px;
   border-right: 10px solid mediumseagreen;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
 }
 
 /*stile colonne per mobile*/

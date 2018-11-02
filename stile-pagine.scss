@@ -227,12 +227,17 @@ body{
 .box {
     //background: #67B4F8;
     max-width: 100%;
-    max-height: 200px;
     .border-img-style {
         border-bottom-right-radius: 50px 100px;
         border-right: 10px solid mediumseagreen;
     }
 
+}
+
+.map {
+    height: 400px;
+    width: 100%;
+    //height: 400px;
 }
 
 /*stile colonne per mobile*/
