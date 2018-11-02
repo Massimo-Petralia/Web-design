@@ -260,6 +260,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: justify;
+  width: 100%;
 }
 
 .tre-col {
