@@ -154,11 +154,17 @@ margin: 10px;
 .box{
     display: flex;
     flex-wrap: wrap;
-    background: #67B4F8;
+    //background: #67B4F8;
     max-width: 100%;
     /*width: 100%;*/
     /*height: 200px;*/
     max-height: 200px; /*200px-2px=198px*/
+    .img-opacity {
+        opacity: 0.5;
+    }
+    .img-opacity:hover {
+        opacity: 1;
+    }
 }
 
 .card-content{
@@ -200,7 +206,7 @@ margin: 10px;
     position: relative;
     //flex: 0;
     bottom: 150px;
-    color: white;
+    color: #67B4F8;
     text-shadow: 2px 2px 3px black;
 }
 
