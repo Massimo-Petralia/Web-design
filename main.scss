@@ -26,22 +26,38 @@
     color: white;
 }
 
-.logo-heading, .heading-subtitle {
-    font-family: nunito-semibold;
+.logo-heading  {
+    //font-family: nunito-semibold;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 7em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
 } 
+.heading-subtitle {
+    letter-spacing: 10px;
+    line-height: 30px;
+    margin-top: 0px;
+    font-weight: lighter;
+}
+
+.logo-text {
+    margin: 40px 0px;
+}
 
 #header{
     .gradient{
-        background: linear-gradient(to right, #0a38c2 25%, transparent 70%);
+        //background: linear-gradient(to right, #0a38c2 25%, transparent 70%);
         position: absolute;
         width: 100%;
         height: 132px;
     }
     position: relative;
-    background-color:#0a38c2;
+    background-color:SeaGreen  ;
     display: flex;
     justify-content: center;
-    background: url(imm/header-background-1.jpg);
+    //background: url(imm/header-background-1.jpg);
     background-size: 100% 100%;
     background-position-x: 0px;
     
@@ -52,9 +68,11 @@
     display: flex;
     align-items: center;
     .logo-svg {
+        transform: scale(1.8,1.8);
         .logo-triangle {
-            fill: #67B4F8;
+            fill: none;
         }
+        margin-right: 30px;
         padding-bottom: 5px;
         fill: none;
         stroke: white;
@@ -70,8 +88,8 @@
 
 .navigation{
     display: flex;
-    background: mediumseagreen;
-    background-image: linear-gradient(to left, #0a38c2 0%, transparent 30%);
+    background: rgb(63, 58, 58);
+    background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
 }
 
 .main-menu{
@@ -79,6 +97,7 @@
     display: flex;
     list-style: none;
     margin: 0px;
+    padding-left: 0px;
 }
 
 .menu-link{
@@ -91,11 +110,16 @@
 
 .menu-link:hover{
     
-    background: #0a38c2;
+    background: tomato;
 }
 
 .modulo-ricerca{
-    margin: auto 10px auto auto;
+    margin: 7px 10px auto auto;
+}
+
+.form-item{
+    position: absolute;
+    right: 0;
 }
 
 .campo-ricerca{
@@ -103,11 +127,22 @@
     outline: none;
     padding-left: 10px;
 }
+.tasto {
+    display: none;
+}
+
+.navigation {
+    position: relative;
+}
 
 /*stile navigazione per mobile*/
-@media all and (max-width: 700px) {
-    body {
+@media all and (max-width: 1200px) {
+    /*body {
         margin: auto;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
     }
     .navigation, .main-menu {
         padding: 0px;
@@ -121,6 +156,40 @@
             display: flex;
             order: -1;
             margin-top: 10px;
+        }*/
+       
+            
+            
+        
+        .main-menu {
+            flex-direction: column;
+            width: 100%;
+        }
+        .main-menu li:not(:first-child) {
+            display: none;
+        }
+        .main-menu li.tasto {
+            display: block;
+        }
+        .tasto {
+            position: absolute;
+            right: 0;
+        }
+        .topnav {
+            position: relative;
+        }
+
+        /*ADD JAVASCRIPT CLASS*/
+        .main-menu.responsive {position: relative; padding-bottom: 10px;}
+        .main-menu.responsive .tasto {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+        .main-menu.responsive li, .form-item.responsive li {
+            display: block;
+            position: relative;
         }
 }
 
@@ -136,7 +205,10 @@ color: black;
 display: flex;
 flex-basis: 100%;
 flex-direction: column;
-margin: 10px;
+margin: 30px;
+box-shadow: -5px 5px 3px grey;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
 }
 
 .tre-col{
@@ -176,15 +248,16 @@ margin: 10px;
 .card-link{
     font-weight: bold;
     text-decoration: none;
-    background: mediumseagreen;
+    background: rgb(63, 58, 58);
     color: white;
     align-items: center;
     margin-top: auto;
     display: block;
     text-align: center;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 5px 0px;
-    background-image: linear-gradient(to left, #0a38c2 0%, transparent 30%);
+    //background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
 }
 
 .flex {
@@ -192,8 +265,8 @@ margin: 10px;
 }
 
 .border-img-style {
-    border-bottom-right-radius: 50px 100px;
-    border-right: 10px solid #0a38c2;
+    //border-bottom-right-radius: 50px 100px;
+    //border-right: 10px solid #0a38c2;
 }
 
 .box-heading {
@@ -202,19 +275,20 @@ margin: 10px;
     bottom: 180px;
     padding: 0px 30px 0px 5px;
     color: white;
-    background: #0a38c2;
+    background: rgb(63, 58, 58);
     border-bottom-right-radius: 50px 100px;
-    border-right: solid 5px red;
-    border-bottom: 1px solid red;
-    background-image: linear-gradient(to right, mediumseagreen 0%, transparent 35%);
+    border-right: solid 5px mediumseagreen;
+    border-bottom: 1px solid mediumseagreen;
+    //background-image: linear-gradient(to right, mediumseagreen 0%, transparent 35%);
     
 }
 
 .subtitle-box-heading {
     font-style: oblique;
-    border-bottom: #0a38c2 1px solid;
-    border-left: #0a38c2 15px solid;
+    border-bottom: SeaGreen 1px solid;
+    border-left: SeaGreen 15px solid;
     padding-left: 5px;
+    margin-left: 10px;
 }
 
 /*stile colonne per mobile*/
@@ -239,5 +313,19 @@ margin: 10px;
 
 
 #footer{
-    background: #0a38c2;
+    background: rgb(63, 58, 58);
+}
+
+/*---------------------CLASSI DI UTILITÀ---------------------------*/
+
+.pd-l-20px{
+    padding-left: 20px;
+}
+
+.pd-r-20px{
+    padding-right: 20px;
+}
+
+.justify-text{
+    text-align: justify;
 }
