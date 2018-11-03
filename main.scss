@@ -32,16 +32,16 @@
 
 #header{
     .gradient{
-        background: linear-gradient(to right, #0a38c2 25%, transparent 70%);
+        //background: linear-gradient(to right, #0a38c2 25%, transparent 70%);
         position: absolute;
         width: 100%;
         height: 132px;
     }
     position: relative;
-    background-color:#0a38c2;
+    background-color:mediumaquamarine;
     display: flex;
     justify-content: center;
-    background: url(imm/header-background-1.jpg);
+    //background: url(imm/header-background-1.jpg);
     background-size: 100% 100%;
     background-position-x: 0px;
     
@@ -70,8 +70,8 @@
 
 .navigation{
     display: flex;
-    background: mediumseagreen;
-    background-image: linear-gradient(to left, #0a38c2 0%, transparent 30%);
+    background: black;
+    background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
 }
 
 .main-menu{
@@ -98,6 +98,11 @@
     margin: auto 10px auto auto;
 }
 
+.form-item{
+    position: absolute;
+    right: 0;
+}
+
 .campo-ricerca{
     border-radius: 5px;
     outline: none;
@@ -107,8 +112,12 @@
     display: none;
 }
 
+.navigation {
+    position: relative;
+}
+
 /*stile navigazione per mobile*/
-@media all and (max-width: 700px) {
+@media all and (max-width: 1200px) {
     /*body {
         margin: auto;
     }
@@ -132,7 +141,7 @@
        
             
             
-        }
+        
         .main-menu {
             flex-direction: column;
             width: 100%;
@@ -152,15 +161,16 @@
         }
 
         /*ADD JAVASCRIPT CLASS*/
-        .main-menu.responsive {position: relative;}
+        .main-menu.responsive {position: relative; padding-bottom: 10px;}
         .main-menu.responsive .tasto {
             position: absolute;
             right: 0px;
             top: 0px;
         }
 
-        .main-menu.responsive li {
+        .main-menu.responsive li, .form-item.responsive li {
             display: block;
+            position: relative;
         }
 }
 
@@ -176,7 +186,10 @@ color: black;
 display: flex;
 flex-basis: 100%;
 flex-direction: column;
-margin: 10px;
+margin: 30px;
+box-shadow: -5px 5px 3px grey;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
 }
 
 .tre-col{
@@ -216,15 +229,16 @@ margin: 10px;
 .card-link{
     font-weight: bold;
     text-decoration: none;
-    background: mediumseagreen;
+    background: gray;
     color: white;
     align-items: center;
     margin-top: auto;
     display: block;
     text-align: center;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 5px 0px;
-    background-image: linear-gradient(to left, #0a38c2 0%, transparent 30%);
+    //background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
 }
 
 .flex {
@@ -232,7 +246,7 @@ margin: 10px;
 }
 
 .border-img-style {
-    border-bottom-right-radius: 50px 100px;
+    //border-bottom-right-radius: 50px 100px;
     border-right: 10px solid #0a38c2;
 }
 
@@ -242,11 +256,11 @@ margin: 10px;
     bottom: 180px;
     padding: 0px 30px 0px 5px;
     color: white;
-    background: #0a38c2;
+    background: darkred;
     border-bottom-right-radius: 50px 100px;
-    border-right: solid 5px red;
-    border-bottom: 1px solid red;
-    background-image: linear-gradient(to right, mediumseagreen 0%, transparent 35%);
+    border-right: solid 5px mediumseagreen;
+    border-bottom: 1px solid mediumseagreen;
+    //background-image: linear-gradient(to right, mediumseagreen 0%, transparent 35%);
     
 }
 
@@ -255,6 +269,7 @@ margin: 10px;
     border-bottom: #0a38c2 1px solid;
     border-left: #0a38c2 15px solid;
     padding-left: 5px;
+    margin-left: 10px;
 }
 
 /*stile colonne per mobile*/
@@ -280,4 +295,18 @@ margin: 10px;
 
 #footer{
     background: #0a38c2;
+}
+
+/*---------------------CLASSI DI UTILITÀ---------------------------*/
+
+.pd-l-20px{
+    padding-left: 20px;
+}
+
+.pd-r-20px{
+    padding-right: 20px;
+}
+
+.justify-text{
+    text-align: justify;
 }
