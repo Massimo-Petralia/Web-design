@@ -125,29 +125,67 @@ body {
   padding-left: 10px;
 }
 
+.tasto {
+  display: none;
+}
+
 /*stile navigazione per mobile*/
 @media all and (max-width: 700px) {
-  body {
-    margin: auto;
+  /*body {
+        margin: auto;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation, .main-menu {
+        padding: 0px;
+        flex-direction: column;
+        }
+        .menu-item{
+            padding: 3px 0px;
+            
+        }
+        .modulo-ricerca{
+            display: flex;
+            order: -1;
+            margin-top: 10px;
+        }*/
+  .modulo-ricerca {
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
   }
-  .navigation, .main-menu {
-    padding: 0px;
+  .main-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .menu-item {
-    padding: 3px 0px;
+  .main-menu li:not(:first-child) {
+    display: none;
   }
-  .modulo-ricerca {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    margin-top: 10px;
+  .main-menu li.tasto {
+    display: block;
+  }
+  .tasto {
+    position: absolute;
+    right: 0;
+  }
+  .topnav {
+    position: relative;
+  }
+  /*ADD JAVASCRIPT CLASS*/
+  .main-menu.responsive {
+    position: relative;
+  }
+  .main-menu.responsive .tasto {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-menu.responsive li {
+    display: block;
   }
 }
 

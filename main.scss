@@ -103,11 +103,18 @@
     outline: none;
     padding-left: 10px;
 }
+.tasto {
+    display: none;
+}
 
 /*stile navigazione per mobile*/
 @media all and (max-width: 700px) {
-    body {
+    /*body {
         margin: auto;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
     }
     .navigation, .main-menu {
         padding: 0px;
@@ -121,6 +128,39 @@
             display: flex;
             order: -1;
             margin-top: 10px;
+        }*/
+        .modulo-ricerca{
+            position: absolute;
+            right: 0;
+            margin-right: 60px;
+        }
+        .main-menu {
+            flex-direction: column;
+        }
+        .main-menu li:not(:first-child) {
+            display: none;
+        }
+        .main-menu li.tasto {
+            display: block;
+        }
+        .tasto {
+            position: absolute;
+            right: 0;
+        }
+        .topnav {
+            position: relative;
+        }
+
+        /*ADD JAVASCRIPT CLASS*/
+        .main-menu.responsive {position: relative;}
+        .main-menu.responsive .tasto {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .main-menu.responsive li {
+            display: block;
         }
 }
 
