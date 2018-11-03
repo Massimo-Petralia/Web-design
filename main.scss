@@ -26,9 +26,25 @@
     color: white;
 }
 
-.logo-heading, .heading-subtitle {
-    font-family: nunito-semibold;
+.logo-heading  {
+    //font-family: nunito-semibold;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 7em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
 } 
+.heading-subtitle {
+    letter-spacing: 10px;
+    line-height: 30px;
+    margin-top: 0px;
+    font-weight: lighter;
+}
+
+.logo-text {
+    margin: 40px 0px;
+}
 
 #header{
     .gradient{
@@ -38,7 +54,7 @@
         height: 132px;
     }
     position: relative;
-    background-color:mediumaquamarine;
+    background-color:SeaGreen  ;
     display: flex;
     justify-content: center;
     //background: url(imm/header-background-1.jpg);
@@ -52,9 +68,11 @@
     display: flex;
     align-items: center;
     .logo-svg {
+        transform: scale(1.8,1.8);
         .logo-triangle {
-            fill: #67B4F8;
+            fill: none;
         }
+        margin-right: 30px;
         padding-bottom: 5px;
         fill: none;
         stroke: white;
@@ -70,7 +88,7 @@
 
 .navigation{
     display: flex;
-    background: black;
+    background: rgb(63, 58, 58);
     background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
 }
 
@@ -79,6 +97,7 @@
     display: flex;
     list-style: none;
     margin: 0px;
+    padding-left: 0px;
 }
 
 .menu-link{
@@ -91,11 +110,11 @@
 
 .menu-link:hover{
     
-    background: #0a38c2;
+    background: tomato;
 }
 
 .modulo-ricerca{
-    margin: auto 10px auto auto;
+    margin: 7px 10px auto auto;
 }
 
 .form-item{
@@ -229,7 +248,7 @@ border-bottom-left-radius: 5px;
 .card-link{
     font-weight: bold;
     text-decoration: none;
-    background: gray;
+    background: rgb(63, 58, 58);
     color: white;
     align-items: center;
     margin-top: auto;
@@ -247,7 +266,7 @@ border-bottom-left-radius: 5px;
 
 .border-img-style {
     //border-bottom-right-radius: 50px 100px;
-    border-right: 10px solid #0a38c2;
+    //border-right: 10px solid #0a38c2;
 }
 
 .box-heading {
@@ -256,7 +275,7 @@ border-bottom-left-radius: 5px;
     bottom: 180px;
     padding: 0px 30px 0px 5px;
     color: white;
-    background: darkred;
+    background: rgb(63, 58, 58);
     border-bottom-right-radius: 50px 100px;
     border-right: solid 5px mediumseagreen;
     border-bottom: 1px solid mediumseagreen;

@@ -25,13 +25,28 @@ body {
   color: white;
 }
 
-.logo-heading, .heading-subtitle {
-  font-family: nunito-semibold;
+.logo-heading {
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 7em;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.heading-subtitle {
+  letter-spacing: 10px;
+  line-height: 30px;
+  margin-top: 0px;
+  font-weight: lighter;
+}
+
+.logo-text {
+  margin: 40px 0px;
 }
 
 #header {
   position: relative;
-  background-color: mediumaquamarine;
+  background-color: SeaGreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +74,9 @@ body {
 }
 
 .logo .logo-svg {
+  -webkit-transform: scale(1.8, 1.8);
+          transform: scale(1.8, 1.8);
+  margin-right: 30px;
   padding-bottom: 5px;
   fill: none;
   stroke: white;
@@ -68,7 +86,7 @@ body {
 }
 
 .logo .logo-svg .logo-triangle {
-  fill: #67B4F8;
+  fill: none;
 }
 
 .logo .text-logo {
@@ -85,7 +103,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: black;
+  background: #3f3a3a;
   background-image: -webkit-gradient(linear, right top, left top, from(mediumseagreen), color-stop(30%, transparent));
   background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
 }
@@ -99,6 +117,7 @@ body {
   display: flex;
   list-style: none;
   margin: 0px;
+  padding-left: 0px;
 }
 
 .menu-link {
@@ -110,11 +129,11 @@ body {
 }
 
 .menu-link:hover {
-  background: #0a38c2;
+  background: tomato;
 }
 
 .modulo-ricerca {
-  margin: auto 10px auto auto;
+  margin: 7px 10px auto auto;
 }
 
 .form-item {
@@ -273,7 +292,7 @@ body {
 .card-link {
   font-weight: bold;
   text-decoration: none;
-  background: gray;
+  background: #3f3a3a;
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -290,17 +309,13 @@ body {
   max-width: 100%;
 }
 
-.border-img-style {
-  border-right: 10px solid #0a38c2;
-}
-
 .box-heading {
   font-style: oblique;
   position: relative;
   bottom: 180px;
   padding: 0px 30px 0px 5px;
   color: white;
-  background: darkred;
+  background: #3f3a3a;
   border-bottom-right-radius: 50px 100px;
   border-right: solid 5px mediumseagreen;
   border-bottom: 1px solid mediumseagreen;
