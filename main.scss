@@ -136,6 +136,7 @@
         }
         .main-menu {
             flex-direction: column;
+            width: 100%;
         }
         .main-menu li:not(:first-child) {
             display: none;
@@ -155,8 +156,8 @@
         .main-menu.responsive {position: relative;}
         .main-menu.responsive .tasto {
             position: absolute;
-            right: 0;
-            top: 0;
+            right: 0px;
+            top: 0px;
         }
 
         .main-menu.responsive li {
