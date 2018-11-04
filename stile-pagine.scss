@@ -305,15 +305,29 @@ body{
 }
 
 .table-style {
-    //flex: 1;
     margin:20px;
     border-collapse: collapse;
- td{
-    border-bottom: 1px solid;
-    padding: 10px;
- }   
- 
+    
+    th{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    td:not(.no-left-border){
+        border-left: 1px solid ;
+    }
+    td:not(.no-bottom-border) {
+        border-bottom: 1px solid ;
+        padding: 10px;
+     
+    }
+    td.bottom-border-none{
+        border-bottom: none;
+    }
+    
 }
+
+
 
   
 /*stile colonne per mobile*/
