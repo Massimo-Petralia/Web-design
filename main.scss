@@ -199,12 +199,17 @@
     }
 
     .card-content{
+        position: relative;
         display: flex;
         flex-direction: column;
         flex: 1;
+        height: 300px;
+        overflow: hidden;
     }
 
     .card-link{
+        position: absolute;
+        bottom: 0px;
         font-weight: bold;
         text-decoration: none;
         background: rgb(63, 58, 58);
@@ -216,6 +221,7 @@
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         padding: 5px 0px;
+        width: 100%;
     }
 
     .box-heading {
