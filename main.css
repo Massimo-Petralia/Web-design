@@ -251,8 +251,10 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 300px;
+  height: 150px;
   overflow: hidden;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(25%, transparent));
+  background-image: linear-gradient(to top, black 0%, transparent 25%);
 }
 
 .card-link {
