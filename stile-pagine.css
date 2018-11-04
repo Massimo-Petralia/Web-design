@@ -118,10 +118,6 @@ body {
   right: 0;
 }
 
-.menu-link:hover {
-  background: #0a38c2;
-}
-
 .modulo-ricerca {
   margin: auto 10px auto auto;
 }
@@ -136,7 +132,7 @@ body {
   display: none;
 }
 
-/*stile navigazione per mobile*/
+/*--------------------------STILE NAVIGAZIONE RESPONSIVE PER MOBILE------------------------------*/
 @media all and (max-width: 1200px) {
   .main-menu {
     -webkit-box-orient: vertical;
@@ -174,6 +170,7 @@ body {
   }
 }
 
+/*---------------------------------------------------------------------------------------------*/
 #content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,8 +219,13 @@ body {
   line-height: 1.5;
 }
 
-.nebrodi-title-style {
-  border-color: orange;
+/*----------------STILE TITOLI PARAGRAFI PAGINE-----------------------------*/
+.title-section {
+  /*ETNA-PAGE*/
+  padding-left: 10px;
+  border-left: 15px solid orange;
+  border-bottom: 1px solid orange;
+  margin-left: 20px;
 }
 
 .nebrodi-section-style {
@@ -233,19 +235,11 @@ body {
   margin-left: 20px;
 }
 
-.peloritani-title-style {
-  border-color: yellow;
-}
-
 .peloritani-section-style {
   padding-left: 10px;
   border-left: 15px solid yellow;
   border-bottom: 1px solid yellow;
   margin-left: 20px;
-}
-
-.sentieri-title-style {
-  border-color: violet;
 }
 
 .sentieri-section-style {
@@ -255,19 +249,11 @@ body {
   margin-left: 20px;
 }
 
-.prodotti-locali-title-style {
-  border-color: purple;
-}
-
 .prodotti-locali-section-style {
   padding-left: 10px;
   border-left: 15px solid purple;
   border-bottom: 1px solid purple;
   margin-left: 20px;
-}
-
-.iblei-title-style {
-  border-color: red;
 }
 
 .iblei-section-style {
@@ -279,17 +265,7 @@ body {
   margin-left: 20px;
 }
 
-.sottotitolo-page {
-  z-index: 1;
-}
-
-.title-section {
-  padding-left: 10px;
-  border-left: 15px solid orange;
-  border-bottom: 1px solid orange;
-  margin-left: 20px;
-}
-
+/*------------------------------------------------------------------------------------*/
 .card-container {
   color: black;
   display: -webkit-box;
@@ -348,10 +324,6 @@ body {
   max-height: 200px;
 }
 
-.box:not(.dati-tecnici-box) .img-opacity {
-  opacity: 1;
-}
-
 .map {
   position: relative;
   height: 400px;
@@ -364,7 +336,11 @@ body {
   color: white;
 }
 
+/*---------------------STILE TABELLA-------------------------------- */
 .table-style {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 20px;
   border-collapse: collapse;
 }
@@ -387,7 +363,7 @@ body {
   border-bottom: none;
 }
 
-/*stile colonne per mobile*/
+/*--------------------STILE COLONNE PER MOBILE-----------------------*/
 @media all and (max-width: 550px) {
   body {
     margin: 0px auto;
@@ -403,7 +379,6 @@ body {
     margin: 0px auto;
   }
   .tre-col {
-    /*flex-wrap: wrap;*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -447,4 +422,37 @@ body {
 .card-map {
   height: 472px;
 }
+
+.flex-table-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sottotitolo-page {
+  z-index: 1;
+}
+
+/*COLORE BORDO ETICHETTA PAGINE*/
+.nebrodi-title-style {
+  border-color: orange;
+}
+
+.peloritani-title-style {
+  border-color: yellow;
+}
+
+.sentieri-title-style {
+  border-color: violet;
+}
+
+.prodotti-locali-title-style {
+  border-color: purple;
+}
+
+.iblei-title-style {
+  border-color: red;
+}
+
+/*-----------------------------*/
 /*# sourceMappingURL=stile-pagine.css.map */

@@ -1,310 +1,300 @@
-body{
-    font-family: arial, verdana, sans-serif;
-    margin: 0px 195px;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    color: white;
-}
-
-#header{
-    .gradient{
-        position: absolute;
-        width: 100%;
-        height: 132px;
-    }
-    position: relative;
-    background-color:SeaGreen;
-    display: flex;
-    justify-content: center;
-    background-size: 100% 100%;
-    background-position-x: 0px;
-
-}
-
-
-.logo {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    .logo-svg {
-        transform: scale(1.8,1.8);
-        .logo-triangle {
-            fill: none;
-        }
-        margin-right: 30px;
-        padding-bottom: 5px;
-        fill: none;
-        stroke: white;
-        stroke-width: 2px;
-        stroke-linecap: square;
-        stroke-linejoin: bevel;
-    }
-    .text-logo {
+    body{
+        font-family: arial, verdana, sans-serif;
+        margin: 0px 195px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        color: white;
     }
-}
 
-.logo-heading  {
-    font-weight: bold;
-    letter-spacing: 5px;
-    font-size: 7em;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    #header{
+        .gradient{
+            position: absolute;
+            width: 100%;
+            height: 132px;
+        }
+        position: relative;
+        background-color:SeaGreen;
+        display: flex;
+        justify-content: center;
+        background-size: 100% 100%;
+        background-position-x: 0px;
 
-}
-
-.heading-subtitle {
-    letter-spacing: 10px;
-    line-height: 30px;
-    margin-top: 0px;
-    font-weight: lighter;
-}
+    }
 
 
- .navigation{
-    position: relative;
-    display: flex;
-    background: rgb(63, 58, 58);
-    background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
-}
+    .logo {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        .logo-svg {
+            transform: scale(1.8,1.8);
+            .logo-triangle {
+                fill: none;
+            }
+            margin-right: 30px;
+            padding-bottom: 5px;
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+            stroke-linecap: square;
+            stroke-linejoin: bevel;
+        }
+        .text-logo {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
-.main-menu{
-    justify-content: flex-start;
-    display: flex;
-    list-style: none;
-    margin: 0px;
-    padding-left: 0px;
-}
+    .logo-heading  {
+      font-weight: bold;
+      letter-spacing: 5px;
+      font-size: 7em;
+      margin-bottom: 20px;
+      margin-top: 40px;
 
-.menu-link{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 10px;
-    display: block;
-}
+    }
 
-.form-item{
-    position: absolute;
-    right: 0;
-}
+    .heading-subtitle {
+     letter-spacing: 10px;
+     line-height: 30px;
+     margin-top: 0px;
+     font-weight: lighter;
+    }
 
-.menu-link:hover{
-    background: #0a38c2;
-}
 
-.modulo-ricerca{
-    margin: auto 10px auto auto;
-}
+    .navigation{
+        position: relative;
+        display: flex;
+        background: rgb(63, 58, 58);
+        background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
+    }
 
-.campo-ricerca{
-    outline: none;
-    border-radius: 5px;
-    padding-left: 5px;
-}
+    .main-menu{
+        justify-content: flex-start;
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding-left: 0px;
+    }
 
-.tasto {
-    display: none;
-}
+    .menu-link{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 10px;
+        display: block;
+    }
 
-/*stile navigazione per mobile*/
-@media all and (max-width: 1200px) {
+    .form-item{
+        position: absolute;
+        right: 0;
+    }
+
+    .modulo-ricerca{
+        margin: auto 10px auto auto;
+    }
+
+    .campo-ricerca{
+        outline: none;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+
+    .tasto {
+        display: none;
+    }
+
+/*--------------------------STILE NAVIGAZIONE RESPONSIVE PER MOBILE------------------------------*/
+
+    @media all and (max-width: 1200px) {
     
-    .main-menu {
+        .main-menu {
          flex-direction: column;
          width: 100%;
-     }
-     .main-menu li:not(:first-child) {
+        }
+        .main-menu li:not(:first-child) {
          display: none;
-     }
-     .main-menu li.tasto {
+        }
+        .main-menu li.tasto {
          display: block;
-     }
-     .tasto {
+        }
+        .tasto {
          position: absolute;
          right: 0;
-     }
-     .topnav {
+        }
+        .topnav {
          position: relative;
-     }
+        }
 
-     /*ADD JAVASCRIPT CLASS*/
-     .main-menu.responsive {
+        /*ADD JAVASCRIPT CLASS*/
+        .main-menu.responsive {
          position: relative; 
          padding-bottom: 10px;
-     }
-     .main-menu.responsive .tasto {
+        }
+        .main-menu.responsive .tasto {
          position: absolute;
          right: 0px;
          top: 0px;
-     }
+        }
 
-     .main-menu.responsive li, .form-item.responsive li {
+        .main-menu.responsive li, .form-item.responsive li {
          display: block;
          position: relative;
-     }
- }
+        }
+    }
 
-#content{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:10px;
-    flex-direction: column;
-    
-}
+/*---------------------------------------------------------------------------------------------*/
 
-#page-header{
-    box-shadow: 0px 5px 2px grey;
-    border-top: 15px solid seagreen;
-    position: relative;
-    display: flex;
-    height: 160px;
-    margin-bottom: 10px;
-    .gradient-page-header{
-        background: linear-gradient(to right, rgb(63, 58, 58) 0%, transparent 100%);
-        position: absolute;
-        width: 100%;
+    #content{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:10px;
+        flex-direction: column;
+    }
+
+    #page-header{
+        box-shadow: 0px 5px 2px grey;
+        border-top: 15px solid seagreen;
+        position: relative;
+        display: flex;
         height: 160px;
-        
+        margin-bottom: 10px;
+        .gradient-page-header{
+            background: linear-gradient(to right, rgb(63, 58, 58) 0%, transparent 100%);
+            position: absolute;
+            width: 100%;
+            height: 160px;
         }
         .sottotitolo-page{
             padding-left: 20px;
         }
     }
 
-.page-heading{ 
-    z-index: 1;
-    height: 50px;
-    background: mediumseagreen;
-    padding-right: 30px;
-    padding-left: 5px;
-    border-right: 10px solid orange;
-    border-bottom-right-radius: 50px 100px;
-    line-height: 1.5;
-}
-
-.nebrodi-title-style {
-    border-color: orange;
-}
-.nebrodi-section-style {
-    padding-left: 10px;
-    border-left: 15px solid orange;
-    border-bottom: 1px solid orange;
-    margin-left: 20px;
-}
-.peloritani-title-style {
-    border-color: yellow;
-}
-.peloritani-section-style {
-    padding-left: 10px;
-    border-left: 15px solid yellow;
-    border-bottom: 1px solid yellow;
-    margin-left: 20px;
-}
-.sentieri-title-style {
-    border-color: violet;
-}
-.sentieri-section-style {
-    padding-left: 10px;
-    border-left: 15px solid violet;
-    border-bottom: 1px solid violet;
-    margin-left: 20px;
-}
-
-.prodotti-locali-title-style {
-    border-color: purple;
-}
-.prodotti-locali-section-style {
-    padding-left: 10px;
-    border-left: 15px solid purple;
-    border-bottom: 1px solid purple;
-    margin-left: 20px;
-}
-.iblei-title-style {
-    border-color: red;
-}
-.iblei-section-style {
-    padding-left: 10px;
-    border-left: 15px solid red;
-    border-bottom: 1px solid red;
-    background-image: linear-gradient(to right, red 0%, transparent 5%);
-    margin-left: 20px;
-}
-.sottotitolo-page {
-    z-index: 1;
-}
-
-.title-section {
-    padding-left: 10px;
-    border-left: 15px solid orange;
-    border-bottom: 1px solid orange;
-    margin-left: 20px;
-    
-}
- 
-.card-container{
-    color: black;
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-    margin: 30px;
-    box-shadow: -5px 5px 3px grey;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.una-col {
-    
-}
-
-.due-col{
-    display: flex;
-    justify-content: space-around;
-    text-align: justify; 
-    width: 100%;
-}
-
-.tre-col{
-    display: flex;
-    width: 100%;
-    margin: 0px 0px 5px 0px;
-    justify-content: space-around;
-}
-
-.argomenti{
-    display: flex;
-}
-
-.flex {
-    max-width: 100%;
-}
-
-.box:not(.dati-tecnici-box){
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    max-height: 200px;
-    .img-opacity {
-        opacity: 1;
+    .page-heading{ 
+        z-index: 1;
+        height: 50px;
+        background: mediumseagreen;
+        padding-right: 30px;
+        padding-left: 5px;
+        border-right: 10px solid orange;
+        border-bottom-right-radius: 50px 100px;
+        line-height: 1.5;
     }
-}
 
-.map {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    //height: 400px;
-}
+   /*----------------STILE TITOLI PARAGRAFI PAGINE-----------------------------*/
 
-.dati-tecnici-box {
-    height: 100%;
-    background: rgb(63, 58, 58);
-    color: white;
-}
+    .title-section {/*ETNA-PAGE*/
+        padding-left: 10px;
+        border-left: 15px solid orange;
+        border-bottom: 1px solid orange;
+        margin-left: 20px;
+    
+    }
+
+    .nebrodi-section-style {
+        padding-left: 10px;
+        border-left: 15px solid orange;
+        border-bottom: 1px solid orange;
+        margin-left: 20px;
+    }
+
+    
+
+    .peloritani-section-style {
+        padding-left: 10px;
+        border-left: 15px solid yellow;
+        border-bottom: 1px solid yellow;
+        margin-left: 20px;
+    }
+
+   
+
+    .sentieri-section-style {
+        padding-left: 10px;
+        border-left: 15px solid violet;
+        border-bottom: 1px solid violet;
+        margin-left: 20px;
+    }
+
+    
+
+    .prodotti-locali-section-style {
+        padding-left: 10px;
+        border-left: 15px solid purple;
+        border-bottom: 1px solid purple;
+        margin-left: 20px;
+    }
+
+  
+
+    .iblei-section-style {
+        padding-left: 10px;
+        border-left: 15px solid red;
+        border-bottom: 1px solid red;
+        background-image: linear-gradient(to right, red 0%, transparent 5%);
+        margin-left: 20px;
+    }
+
+/*------------------------------------------------------------------------------------*/
+    
+    .card-container{
+        color: black;
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        margin: 30px;
+        box-shadow: -5px 5px 3px grey;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .due-col{
+        display: flex;
+        justify-content: space-around;
+        text-align: justify; 
+        width: 100%;
+    }
+
+    .tre-col{
+        display: flex;
+        width: 100%;
+        margin: 0px 0px 5px 0px;
+        justify-content: space-around;
+    }
+
+    .argomenti{
+        display: flex;
+    }
+
+    .flex {
+        max-width: 100%;
+    }
+
+    .box:not(.dati-tecnici-box){
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        max-height: 200px;
+    }
+
+
+    .map {
+        position: relative;
+        height: 400px;
+        width: 100%;
+    }
+
+    .dati-tecnici-box {
+        height: 100%;
+        background: rgb(63, 58, 58);
+        color: white;
+    }
+
+/*---------------------STILE TABELLA-------------------------------- */
 
 .table-style {
+    flex: 1;
     margin:20px;
     border-collapse: collapse;
     
@@ -327,25 +317,22 @@ body{
     
 }
 
+/*--------------------STILE COLONNE PER MOBILE-----------------------*/
 
-
-  
-/*stile colonne per mobile*/
 @media all and (max-width: 550px) {
     body {
         margin: 0px auto;
     }
     .due-col {
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    }
+}
 
 @media all and (max-width: 700px) {
     body {
         margin: 0px auto;
     }
     .tre-col{
-        /*flex-wrap: wrap;*/
         flex-direction: column;
     }
 }    
@@ -387,3 +374,35 @@ body{
 .card-map{
     height: 472px;
 }
+
+.flex-table-container{
+    display: flex;
+}
+
+.sottotitolo-page {
+    z-index: 1;
+}
+
+/*COLORE BORDO ETICHETTA PAGINE*/
+
+.nebrodi-title-style {
+    border-color: orange;
+}
+
+.peloritani-title-style {
+    border-color: yellow;
+}
+
+.sentieri-title-style {
+    border-color: violet;
+}
+
+.prodotti-locali-title-style {
+    border-color: purple;
+}
+
+.iblei-title-style {
+    border-color: red;
+}
+
+/*-----------------------------*/
