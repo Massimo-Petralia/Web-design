@@ -338,7 +338,7 @@ body {
   max-width: 100%;
 }
 
-.box {
+.box:not(.dati-tecnici-box) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,11 +348,12 @@ body {
   max-height: 200px;
 }
 
-.box .img-opacity {
+.box:not(.dati-tecnici-box) .img-opacity {
   opacity: 1;
 }
 
 .map {
+  position: relative;
   height: 400px;
   width: 100%;
 }
@@ -361,6 +362,16 @@ body {
   height: 100%;
   background: #3f3a3a;
   color: white;
+}
+
+.table-style {
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.table-style td {
+  border-bottom: 1px solid;
+  padding: 10px;
 }
 
 /*stile colonne per mobile*/
@@ -418,5 +429,9 @@ body {
 
 .flex {
   max-width: 100%;
+}
+
+.card-map {
+  height: 472px;
 }
 /*# sourceMappingURL=stile-pagine.css.map */
