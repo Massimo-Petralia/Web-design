@@ -1,170 +1,240 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home-sito</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+
 </head>
+
 <body>
-   <div id="container">
-       <header id="header">
-            <div class="gradient"></div>     
-           <div class="logo">
-               <svg class="logo-svg" width="127px" height="127px">
-                        <path class="logo-triangle" d="M54.2,47.79 L81.4,63.5 L54.2,79.21 Z"></path>
-                        <path d="M54.2,63.5 Q27,84 27.17,94.17 L63.5,112.83 Q37,94 37.86,88.25 L54.2,79.21 Z
+    <div id="container">
+        <header id="header">
+            <div class="gradient"></div>
+            <div class="logo">
+                <svg class="logo-svg" width="127px" height="127px">
+                    <path class="logo-triangle" d="M54.2,47.79 L81.4,63.5 L54.2,79.21 Z"></path>
+                    <path d="M54.2,63.5 Q27,84 27.17,94.17 L63.5,112.83 Q37,94 37.86,88.25 L54.2,79.21 Z
                         M58.79,110.41 L51.04,119.59 L63.33,112.76 Z M27.17,94.17 L37.86,88.25
                         M66.17,72.63 Q104.709,69.459 104.78,59.19 L82.29,25.08
                         Q96.312,53.688 92.56,59.09 L73.89,58.94 L81.41,63.5 Z
                         M85.21,29.5 L96.47,25.31 H82.41 Z M92.56,59.09 L104.78,59.19
                         M68.03,55.77 Q67.938,45.5 54.08,17.35 L20.28,40.28 Q45.188,26.125 54.2,29.57 V54.24,48.24 Z
-                        M24.66,37.31 L20.32,26.11 V40.17 Z M54.14,29.57 V17.35 Z" ></path>
-                      </svg>
-               <div class="logo-text">       
-               <h1 class="logo-heading">Sicily</h1>
-               <h2 class="heading-subtitle">Natural tour</h2>
-               </div>
+                        M24.66,37.31 L20.32,26.11 V40.17 Z M54.14,29.57 V17.35 Z"></path>
+                </svg>
+                <div class="logo-text">
+                    <h1 class="logo-heading">Sicily</h1>
+                    <h2 class="heading-subtitle">Natural tour</h2>
+                </div>
             </div>
         </header>
-       <nav class="navigation">
-           <ul id="main-menu" class="main-menu">
-               <li class="home-menu-item"><a class="menu-link" href="">Home</a></li>
-               <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/etna.html">Etna</a></li>
-               <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/nebrodi.html">Nebrodi</a></li>
-               <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/peloritani.html">Peloritani</a></li>
-               <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/iblei.html">Iblei</a></li>
-               <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/sentieri.html">Sentieri</a></li>
-               <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/prodotti-locali.html">Prodotti locali</a></li>
-               <li class="tasto" onclick="myFunction()"><a class="menu-link" href="javascript:void(0)">Menù</a></li>
-               <li class="menu-item form-item">
+        <nav class="navigation">
+            <ul id="main-menu" class="main-menu">
+                <li class="home-menu-item"><a class="menu-link" href="">Home</a></li>
+                <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/etna.html">Etna</a></li>
+                <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/nebrodi.html">Nebrodi</a></li>
+                <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/peloritani.html">Peloritani</a></li>
+                <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/iblei.html">Iblei</a></li>
+                <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/sentieri.html">Sentieri</a></li>
+                <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/prodotti-locali.html">Prodotti
+                        locali</a></li>
+                <li class="tasto" onclick="myFunction()"><a class="menu-link" href="javascript:void(0)">Menù</a></li>
+                <li class="menu-item form-item">
                     <form class="modulo-ricerca" action="">
                         <input class="campo-ricerca" type="text" placeholder=" Ricerca...">
                     </form>
-               </li>
-           </ul>
+                </li>
+            </ul>
         </nav>
-       <div id="content">
-           <section class="tre-col">
+        <div id="content">
+            <section class="tre-col">
+                <!-- <div class="card-container card-1">
+                    <div class="box box-1">
+                        <img class="flex img-opacity border-img-style" src="imm/grotta-lauro.jpg" title="Grotta del Lauro"
+                            alt="">
+                        <h1 class="box-heading">Grotta del Lauro</h1>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="subtitle-box-heading">Speleologgia alle Rocche del Crasto</h2>
+                        <p class="pd-l-20px pd-r-20px justify-text">La grotta del Lauro si trova nel territorio di
+                            Alcara li Fusi in provincia
+                            di Messina a quota 1.068 m sul versante occidentale del massiccio roccioso
+                            delle Rocche del Crasto.
+                        </p>
+                        <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
+                    </div>
+                </div> -->
                 <div class="card-container card-1">
-                     <div class="box box-1">
-                         <img class="flex img-opacity border-img-style" src="imm/grotta-lauro.jpg" title="Grotta del Lauro" alt="">
-                         <h1 class="box-heading">Grotta del Lauro</h1>
-                        </div>
-                     <h2 class="subtitle-box-heading">Speleologgia alle Rocche del Crasto</h2>
-                     <div class="card-content">
-                     <p class="pd-l-20px pd-r-20px justify-text">La grotta del Lauro si trova nel territorio di Alcara li Fusi in provincia 
-                         di Messina a quota 1.068 m sul versante occidentale del massiccio roccioso 
-                         delle Rocche del Crasto.</p>
-                     <a class="card-link" href="">Leggi articolo</a>
-                     </div>
+                    <div class="box box-1">
+                        <img class="flex img-opacity border-img-style" src="imm/grotta-lauro.jpg" title="Cavolicello"
+                            alt="">
+                        <h1 class="box-heading">Grotta del Lauro</h1>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="subtitle-box-heading">Un'erba commestibile selvaticha</h2>
+                        <p class="pd-l-20px pd-r-20px justify-text">Diffuso nell’Italia centro meridionale , dal mare e
+                            fino ai 1200 m di quota,
+                            il Cavolicello è una erbacea annuale – biennale che cresce intorno ai 70 cm
+                            di altezza. Si incontra spesso lungo i margini delle strade, un po' meno
+                            negli incolti. La predilezione per i suoli silicei non consente alla specie
+                            di diffondersi a tappeto. In Sicilia, ad esempio, è diffusa a macchia di
+                            leopardo nei terreni vulcanici (Monte Lauro, Etna, Pantelleria, Ustica, Linosa)
+                            e in quelli che, pur essendo calcarei, assicurano alla pianta una discreta
+                            quantità di silicio (Modica, Palazzolo, Peloritani, ecc). Nel catanese il
+                            consumo di questa verdura selvatica è così elevato da poterla trovare allo
+                            stato fresco sul banco dei verdumai.
+                            <blockquote>
+                                <cite></cite>
+                            </blockquote>
+                        </p>
+                        <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
+                    </div>
                 </div>
                 <div class="card-container card-2">
-                      <div class="box box-2">
-                          <img class="flex img-opacity border-img-style" src="imm/cavolicello.jpg" title="Cavolicello" alt="">
-                          <h1 class="box-heading">Cavolicello</h1>
-                        </div>
-                      <div class="card-content">
-                            <h2 class="subtitle-box-heading">Un'erba commestibile selvaticha</h2>
-                      <p class="pd-l-20px pd-r-20px justify-text">Diffuso nell’Italia centro meridionale , dal mare e fino ai 1200 m di quota, 
-                          il Cavolicello è una erbacea annuale – biennale che cresce intorno ai 70 cm 
-                          di altezza. Si incontra spesso lungo i margini delle strade, un po' meno 
-                          negli incolti. La predilezione per i suoli silicei  non consente alla specie 
-                          di diffondersi a tappeto. In Sicilia, ad esempio, è diffusa a macchia di 
-                          leopardo nei terreni vulcanici (Monte Lauro, Etna, Pantelleria, Ustica, Linosa) 
-                          e in quelli che, pur essendo calcarei, assicurano alla pianta una discreta 
-                          quantità di silicio (Modica, Palazzolo, Peloritani, ecc). Nel catanese il 
-                          consumo di questa verdura selvatica è così elevato da poterla trovare allo 
-                          stato fresco sul banco dei verdumai.
-                          <blockquote>
-                              <cite>Fabio Morreale – Piante spontanee alimentari in sicilia</cite>
-                          </blockquote>
+                    <div class="box box-2">
+                        <img class="flex img-opacity border-img-style" src="imm/cavolicello.jpg" title="Cavolicello"
+                            alt="">
+                        <h1 class="box-heading">Cavolicello</h1>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="subtitle-box-heading">Un'erba commestibile selvaticha</h2>
+                        <p class="pd-l-20px pd-r-20px justify-text">Diffuso nell’Italia centro meridionale , dal mare e
+                            fino ai 1200 m di quota,
+                            il Cavolicello è una erbacea annuale – biennale che cresce intorno ai 70 cm
+                            di altezza. Si incontra spesso lungo i margini delle strade, un po' meno
+                            negli incolti. La predilezione per i suoli silicei non consente alla specie
+                            di diffondersi a tappeto. In Sicilia, ad esempio, è diffusa a macchia di
+                            leopardo nei terreni vulcanici (Monte Lauro, Etna, Pantelleria, Ustica, Linosa)
+                            e in quelli che, pur essendo calcarei, assicurano alla pianta una discreta
+                            quantità di silicio (Modica, Palazzolo, Peloritani, ecc). Nel catanese il
+                            consumo di questa verdura selvatica è così elevato da poterla trovare allo
+                            stato fresco sul banco dei verdumai.
+                            <blockquote>
+                                <cite>Fabio Morreale – Piante spontanee alimentari in sicilia</cite>
+                            </blockquote>
                         </p>
-                      <a class="card-link" href="">Leggi articolo</a>
-                      </div>
+                        <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
+                    </div>
                 </div>
                 <div class="card-container card-3">
-                      <div class="box box-3">
-                          <img class="flex img-opacity border-img-style" src="imm/funghi-piccoli.jpg" title="Chiodini" alt="">
-                          <h1 class="box-heading">Funghi di Milo</h1>
-                        </div>
-                      <div class="card-content">
-                            <h2 class="subtitle-box-heading">Funghi dell'Etna</h2>
-                      <p class="pd-l-20px pd-r-20px justify-text">Funghi di Milo.
-                            Dopo quel giorno di pioggia eravamo contenti aspettando il tempo necessario 
-                            allo sviluppo dei primi carpofori fungini; avevamo però fatto però fatto i 
-                            conti senza considerare il forte vento di tramontana che per tre giorni 
-                            consecutivi cominciò ad imperversare asciugando ogni traccia di umidità. 
-                            Ciononostante le nostre escursioni sono continuate e cosi frugando negli 
-                            anfratti e vicino ai sassi siamo riusciti a trovare qualche interessante 
+                    <div class="box box-3">
+                        <img class="flex img-opacity border-img-style" src="imm/funghi-piccoli.jpg" title="Chiodini"
+                            alt="">
+                        <h1 class="box-heading">Funghi di Milo</h1>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="subtitle-box-heading">Funghi dell'Etna</h2>
+                        <p class="pd-l-20px pd-r-20px justify-text">Funghi di Milo.
+                            Dopo quel giorno di pioggia eravamo contenti aspettando il tempo necessario
+                            allo sviluppo dei primi carpofori fungini; avevamo però fatto però fatto i
+                            conti senza considerare il forte vento di tramontana che per tre giorni
+                            consecutivi cominciò ad imperversare asciugando ogni traccia di umidità.
+                            Ciononostante le nostre escursioni sono continuate e cosi frugando negli
+                            anfratti e vicino ai sassi siamo riusciti a trovare qualche interessante
                             specie di piccole dimensioni.
                             <blockquote>
                                 <cite>Leonardo la Spina – Rivista di micologia siciliana – 2002 – numero speciale</cite>
                             </blockquote>
                         </p>
-                      <a class="card-link" href="">Leggi articolo</a>
-                      </div>
+                        <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
+                    </div>
                 </div>
-           </section>
-           <section class="due-col">
+            </section>
+            <section class="due-col">
                 <div class="card-container card-4">
-                      <div class="box box-4">
-                          <img class="flex img-opacity border-img-style" src="imm/fungo-carrubo.jpg" title="particolare Fungo di Carrubbo" alt="">
-                          <h1 class="box-heading">Piatti tipici di Siracusa</h1>
-                        </div>
-                      <div class="card-content">
-                            <h2 class="subtitle-box-heading">A funcia cche crastuna (funghi con lumache)</h2>
-                      <p class="pd-l-20px pd-r-20px justify-text">Ingredienti: funghi di carrubo, laetiporus sulphureus; 20 lumache spurgate, 
-                          cotte e sgusciate, 2 peperoni arrostiti spellati e tagliati a listarelle e 
-                          1 patata (a persona); 500 gr di pomodori freschi pelati; 2 cipolle. 
-                          Soffriggere le cipolle in olio d’oliva, aggiungere i pomodori tagliati a 
-                          dadini, salare e far cuocere per circa 15-20 minuti. Nello stesso capiente 
-                          tegame, aggiungere ancora i peperoni, i funghi già cotti un acqua bollente 
-                          salata, le lumache (crastuna) e le patate, prima soffritte in olio d’oliva. 
-                          Fare insaporire bene il tutto e servire. A piacere cospargere di peperoncino 
-                          rosso.</p>
-                      <a class="card-link" href="">Leggi articolo</a>
-                      </div>
+                    <div class="box box-4">
+                        <img class="flex img-opacity border-img-style" src="imm/fungo-carrubo.jpg" title="particolare Fungo di Carrubbo"
+                            alt="">
+                        <h1 class="box-heading">Piatti tipici di Siracusa</h1>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="subtitle-box-heading">A funcia cche crastuna (funghi con lumache)</h2>
+                        <p class="pd-l-20px pd-r-20px justify-text">Ingredienti: funghi di carrubo, laetiporus
+                            sulphureus; 20 lumache spurgate,
+                            cotte e sgusciate, 2 peperoni arrostiti spellati e tagliati a listarelle e
+                            1 patata (a persona); 500 gr di pomodori freschi pelati; 2 cipolle.
+                            Soffriggere le cipolle in olio d’oliva, aggiungere i pomodori tagliati a
+                            dadini, salare e far cuocere per circa 15-20 minuti. Nello stesso capiente
+                            tegame, aggiungere ancora i peperoni, i funghi già cotti un acqua bollente
+                            salata, le lumache (crastuna) e le patate, prima soffritte in olio d’oliva.
+                            Fare insaporire bene il tutto e servire. A piacere cospargere di peperoncino
+                            rosso.</p>
+                        <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
+                    </div>
                 </div>
                 <div class="card-container card-5">
-                      <div class="box box-5">
-                          <img class="flex img-opacity border-img-style" src="imm/pasta-sarde.jpg" title="Pasta con le sarde" alt="">
-                          <h1 class="box-heading">Piatti tipici di Palermo</h1>
-                        </div>
-                      <div class="card-content">
-                            <h2 class="subtitle-box-heading">Pasta con le Sarde</h2>
-                      <p class="pd-l-20px pd-r-20px justify-text">La tradizione culinaria palermitana mi impone di citare un primo piatto popolarissimo, 
-                          la pasta con le sarde. In questo caso il finocchietto va lessato, scolato, separato 
-                          a mano dalle parti dure, tritato e unito a un soffritto di cipolla, sarda, pinoli 
-                          (si possono sostituire con le mandorle tostate), capperi e uva passita precedentemente 
-                          ammorbidita nel vino bianco. Con il sugo ottenuto si condisce la pasta 
-                          (preferibilmente bucatini), cotta nell’acqua in cui è stato lessato il finocchio 
-                          selvatico. Servire spolverando di mollica abbrustolita. Si può anche disporre in una 
-                          teglia e infornare.
-                          <blockquote>
+                    <div class="box box-5">
+                        <img class="flex img-opacity border-img-style" src="imm/pasta-sarde.jpg" title="Pasta con le sarde"
+                            alt="">
+                        <h1 class="box-heading">Piatti tipici di Palermo</h1>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="subtitle-box-heading">Pasta con le Sarde</h2>
+                        <p class="pd-l-20px pd-r-20px justify-text">La tradizione culinaria palermitana mi impone di
+                            citare un primo piatto popolarissimo,
+                            la pasta con le sarde. In questo caso il finocchietto va lessato, scolato, separato
+                            a mano dalle parti dure, tritato e unito a un soffritto di cipolla, sarda, pinoli
+                            (si possono sostituire con le mandorle tostate), capperi e uva passita precedentemente
+                            ammorbidita nel vino bianco. Con il sugo ottenuto si condisce la pasta
+                            (preferibilmente bucatini), cotta nell’acqua in cui è stato lessato il finocchio
+                            selvatico. Servire spolverando di mollica abbrustolita. Si può anche disporre in una
+                            teglia e infornare.
+                            <blockquote>
                                 <cite>Fabio Morreale – Piante spontanee alimentari in sicilia</cite>
                             </blockquote>
                         </p>
-                      <a class="card-link" href="">Leggi articolo</a>
-                      </div>
+                        <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
+                    </div>
                 </div>
-           </section>
+            </section>
         </div>
-       <div id="footer">
-           <dd>Creato da Massimo Petralia</dd>
-       </div>
-   </div>
-   <script>
-       function myFunction() {
-           var x = document.getElementById('main-menu');
-           if (x.className === 'main-menu') {
-               x.className += ' responsive';
-           } else {
-               x.className = 'main-menu';
-           }
-       }
-   </script>
+        <div id="footer">
+            <dd>Creato da Massimo Petralia</dd>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById('main-menu');
+            if (x.className === 'main-menu') {
+                x.className += ' responsive';
+            } else {
+                x.className = 'main-menu';
+            }
+        }
+
+        isColor = false;
+        function collapse(event) {
+            card = event.target.parentNode;
+            if (isColor === false) {
+                card.style.height = "500px";
+               // card.style.backgroundImage = "linear-gradient(to top, black 0%, transparent 30%)";
+                isColor = true;
+            } else {
+                debugger
+                card.style.height = "100px";
+               // card.style.backgroundImage = "linear-gradient(to top, black 0%, transparent 30%)";
+                isColor = false;
+                
+            }
+            
+
+            
+            
+
+            // console.log(e);
+            //    card = document.getElementsByClassName('card-content')[0];
+            //    if (isCollapse) {
+            //        card.style.height = "500px";
+            //        card.style.backgroundImage = "linear-gradient(to top, red 0%, transparent 25%)";
+            //        isCollapse = false;
+            //    } else {
+            //        isCollapse = true;
+            //    }
+        }
+    </script>
 </body>
+
 </html>

@@ -166,6 +166,7 @@
     }
 
     .card-container{
+        position: relative;
         color: black;
         display: flex;
         flex-basis: 100%;
@@ -174,7 +175,9 @@
         box-shadow: -5px 5px 3px grey;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
+        // min-height: 460px;
     }
+
 
     .tre-col{
         display: flex;
@@ -199,13 +202,17 @@
     }
 
     .card-content{
-        position: relative;
+        position: unset;
         display: flex;
         flex-direction: column;
-        flex: 1;
-        height: 150px;
+        flex: 1 0 auto;
+        //height: 150px;
         overflow: hidden;
-        background-image: linear-gradient(to top, black 0%, transparent 25%);
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+       // background-image: linear-gradient(to top, black 0%, transparent 30%);
+        transition: 2s;
+        height: 250px; 
     }
 
     .card-link{
