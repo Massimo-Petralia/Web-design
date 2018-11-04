@@ -197,8 +197,8 @@ body {
 }
 
 #page-header .gradient-page-header {
-  background: -webkit-gradient(linear, left top, right top, from(#0a38c2), to(transparent));
-  background: linear-gradient(to right, #0a38c2 0%, transparent 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#3f3a3a), to(transparent));
+  background: linear-gradient(to right, #3f3a3a 0%, transparent 100%);
   position: absolute;
   width: 100%;
   height: 160px;
@@ -217,8 +217,6 @@ body {
   border-right: 10px solid orange;
   border-bottom-right-radius: 50px 100px;
   line-height: 1.5;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0a38c2), color-stop(30%, transparent));
-  background-image: linear-gradient(to right, #0a38c2 0%, transparent 30%);
 }
 
 .nebrodi-title-style {

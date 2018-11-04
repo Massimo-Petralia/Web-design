@@ -161,7 +161,7 @@ body{
     height: 160px;
     margin-bottom: 10px;
     .gradient-page-header{
-        background: linear-gradient(to right, #0a38c2 0%, transparent 100%);
+        background: linear-gradient(to right, rgb(63, 58, 58) 0%, transparent 100%);
         position: absolute;
         width: 100%;
         height: 160px;
@@ -181,9 +181,8 @@ body{
     border-right: 10px solid orange;
     border-bottom-right-radius: 50px 100px;
     line-height: 1.5;
-    background-image: linear-gradient(to right, #0a38c2 0%, transparent 30%);
-
 }
+
 .nebrodi-title-style {
     border-color: orange;
 }
