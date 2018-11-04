@@ -1,25 +1,25 @@
 body{
+    font-family: arial, verdana, sans-serif;
     margin: 0px 195px;
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
+    box-sizing: border-box;
     color: white;
 }
 
 #header{
     .gradient{
-        background: linear-gradient(to right, #0a38c2 0%, transparent 70%);
         position: absolute;
         width: 100%;
         height: 132px;
     }
     position: relative;
-    background: #0a38c2;
+    background-color:SeaGreen;
     display: flex;
     justify-content: center;
-    background: url(imm/header-background-1.jpg);
     background-size: 100% 100%;
     background-position-x: 0px;
+
 }
 
 
@@ -28,9 +28,11 @@ body{
     display: flex;
     align-items: center;
     .logo-svg {
+        transform: scale(1.8,1.8);
         .logo-triangle {
-            fill: #67B4F8;
+            fill: none;
         }
+        margin-right: 30px;
         padding-bottom: 5px;
         fill: none;
         stroke: white;
@@ -42,7 +44,23 @@ body{
         display: flex;
         flex-direction: column;
     }
- }
+}
+
+.logo-heading  {
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 7em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+}
+
+.heading-subtitle {
+    letter-spacing: 10px;
+    line-height: 30px;
+    margin-top: 0px;
+    font-weight: lighter;
+}
 
 
  .navigation{
@@ -216,14 +234,19 @@ body{
     padding-left: 10px;
     border-left: 15px solid orange;
     border-bottom: 1px solid orange;
+    margin-left: 20px;
     
 }
  
 .card-container{
     color: black;
-    margin: 0px 10px;
-    flex-basis: 50%;
-    flex-grow: 1;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    margin: 30px;
+    box-shadow: -5px 5px 3px grey;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .una-col {
@@ -252,14 +275,14 @@ body{
     max-width: 100%;
 }
 
-.box {
-    //background: #67B4F8;
+.box{
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
-    .border-img-style {
-        border-bottom-right-radius: 50px 100px;
-        border-right: 10px solid mediumseagreen;
+    max-height: 200px;
+    .img-opacity {
+        opacity: 1;
     }
-
 }
 
 .map {
@@ -294,6 +317,36 @@ body{
 }    
 
 #footer{
-    background: #0a38c2;
+    background: rgb(63, 58, 58);
+}
+
+/*---------------------CLASSI DI UTILITÀ---------------------------*/
+
+.pd-l-20px{
+    padding-left: 20px;
+}
+
+.pd-r-20px{
+    padding-right: 20px;
+}
+
+.justify-text{
+    text-align: justify;
+}
+
+.logo-text {
+    margin: 40px 0px;
+}
+
+.menu-link:hover{
+    background: tomato;
+}
+
+.modulo-ricerca{
+    margin: 7px 10px auto auto;
+}
+
+.flex {
+    max-width: 100%;
 }
 
