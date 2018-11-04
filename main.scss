@@ -118,7 +118,8 @@
     position: relative;
 }
 
-/*sTILE NAVIGAZIONE RESPONSIVE PER MOBILE*/
+/*--------STILE NAVIGAZIONE RESPONSIVE PER MOBILE------------------*/
+
     @media all and (max-width: 1200px) {
     
        .main-menu {
@@ -155,6 +156,8 @@
             position: relative;
         }
     }
+    
+/*----------------------------------------------------------------*/    
 
     #content{
         display: flex;
@@ -235,7 +238,8 @@
         margin-left: 10px;
     }
 
-/*STILE COLONNE PER MOBILE*/
+/*---------------------STILE COLONNE PER MOBILE---------------------*/
+
     @media all and (max-width: 700px) {
         body {
             margin: auto;

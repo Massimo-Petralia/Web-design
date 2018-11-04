@@ -40,10 +40,6 @@ body {
   font-weight: lighter;
 }
 
-.logo-text {
-  margin: 40px 0px;
-}
-
 #header {
   position: relative;
   background-color: SeaGreen;
@@ -128,14 +124,6 @@ body {
   display: block;
 }
 
-.menu-link:hover {
-  background: tomato;
-}
-
-.modulo-ricerca {
-  margin: 7px 10px auto auto;
-}
-
 .form-item {
   position: absolute;
   right: 0;
@@ -155,28 +143,8 @@ body {
   position: relative;
 }
 
-/*stile navigazione per mobile*/
+/*--------STILE NAVIGAZIONE RESPONSIVE PER MOBILE------------------*/
 @media all and (max-width: 1200px) {
-  /*body {
-        margin: auto;
-    }
-    .navigation {
-        display: flex;
-        flex-direction: column;
-    }
-    .navigation, .main-menu {
-        padding: 0px;
-        flex-direction: column;
-        }
-        .menu-item{
-            padding: 3px 0px;
-            
-        }
-        .modulo-ricerca{
-            display: flex;
-            order: -1;
-            margin-top: 10px;
-        }*/
   .main-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -213,6 +181,7 @@ body {
   }
 }
 
+/*----------------------------------------------------------------*/
 #content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,13 +232,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 100%;
-  /*width: 100%;*/
-  /*height: 200px;*/
   max-height: 200px;
-  /*200px-2px=198px*/
-  /*.img-opacity:hover {
-        opacity: 1;
-    }*/
 }
 
 .box .img-opacity {
@@ -305,10 +268,6 @@ body {
   padding: 5px 0px;
 }
 
-.flex {
-  max-width: 100%;
-}
-
 .box-heading {
   font-style: oblique;
   position: relative;
@@ -329,7 +288,7 @@ body {
   margin-left: 10px;
 }
 
-/*stile colonne per mobile*/
+/*---------------------STILE COLONNE PER MOBILE---------------------*/
 @media all and (max-width: 700px) {
   body {
     margin: auto;
@@ -365,5 +324,21 @@ body {
 
 .justify-text {
   text-align: justify;
+}
+
+.logo-text {
+  margin: 40px 0px;
+}
+
+.menu-link:hover {
+  background: tomato;
+}
+
+.modulo-ricerca {
+  margin: 7px 10px auto auto;
+}
+
+.flex {
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

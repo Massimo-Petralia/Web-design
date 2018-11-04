@@ -30,20 +30,23 @@
                 </div>
             </header> 
    
-     <nav class="navigation">
-        <ul class="main-menu">
-            <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/index.html">Home</a></li>
-            <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/etna.html">Etna</a></li>
-            <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/nebrodi.html">Nebrodi</a></li>
-            <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/peloritani.html">Peloritani</a></li>
-            <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/iblei.html">Iblei</a></li>
-            <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/sentieri.html">Sentieri</a></li>
-            <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/prodotti-locali.html">Prodotti locali</a></li>
-        </ul>
-        <form class="modulo-ricerca" action="">
-            <input class="campo-ricerca" type="text" placeholder=" Ricerca...">
-        </form>
-     </nav> 
+            <nav class="navigation">
+                    <ul id="main-menu" class="main-menu">
+                        <li class="home-menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/index.html">Home</a></li>
+                        <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/etna.html">Etna</a></li>
+                        <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/nebrodi.html">Nebrodi</a></li>
+                        <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/peloritani.html">Peloritani</a></li>
+                        <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/iblei.html">Iblei</a></li>
+                        <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/sentieri.html">Sentieri</a></li>
+                        <li class="menu-item"><a class="menu-link" href="file:///home/massimo/WEB_DESIGN/PROGETTO/prodotti-locali.html">Prodotti locali</a></li>
+                        <li class="tasto" onclick="myFunction()"><a class="menu-link" href="javascript:void(0)">Menù</a></li>
+                        <li class="menu-item form-item">
+                             <form class="modulo-ricerca" action="">
+                                 <input class="campo-ricerca" type="text" placeholder=" Ricerca...">
+                             </form>
+                        </li>
+                    </ul>
+                 </nav>
      <header id="page-header" style="background: url(imm/page-header-background-peloritani.jpg)">
             <div class="gradient-page-header"></div>
          <h1 class="page-heading peloritani-title-style">Peloritani</h1>
@@ -58,7 +61,7 @@
                  <div class="card-container card-1">
                      <div class="box box-1"></div>
                      <h1 class="peloritani-section-style">Monti Peloritani</h1>
-                     <p>Assieme alla catena dei Nebrodi e delle Madonie costituisce l’appennino, 
+                     <p class="pd-l-20px pd-r-20px justify-text">Assieme alla catena dei Nebrodi e delle Madonie costituisce l’appennino, 
                          si estendono a nord e nord-est fino al mar tirreno e mar ionio, a sud 
                          fa da frontiera la valle dell’Alcantara dove il corso del fiume che 
                          sfocia a Giardini Naxos  crea una linea che divide i Peloritani dal’Etna. 
@@ -84,7 +87,7 @@
                         <img class="flex border-img-style" src="imm/dorsale-peloritana.jpg" title="Dorsale peloritana" alt="">
                     </div>
                     <h1 class="peloritani-section-style">Dorsale peloritana</h1>
-                    <p>Un antico percorso perlopiù in terra battuta che attraversa i magnifici paesaggi dei peloritani 
+                    <p class="pd-l-20px pd-r-20px justify-text">Un antico percorso perlopiù in terra battuta che attraversa i magnifici paesaggi dei peloritani 
                         tra vallate alte montagne, burroni e fiumare, collega <strong>Portella San Rizzo a Portella Mandrazzi</strong>, 
                         è lungo 70 Km. In un’epoca dove non esistevano automobili o treni era la via naturale più breve 
                         per mettere in comunicazione i paesi del mar Tirreno Con quelli dello Ionio. Durante il 
@@ -102,7 +105,7 @@
                         <img class="flex border-img-style" src="imm/schisina.jpg" title="Una struttura del Villaggio Schisina" alt="">
                     </div>
                     <h1 class="peloritani-section-style">I Fantasmi dei peloritani</h1>
-                    <p>Costruiti dalla regione Sicilia nel 1950 tuttora in stato di abbandono, situati sull’altopiano 
+                    <p class="pd-l-20px pd-r-20px justify-text">Costruiti dalla regione Sicilia nel 1950 tuttora in stato di abbandono, situati sull’altopiano 
                         di <strong>Sella Mandrazzi</strong> costituiscono l’unica frazione del comune di <strong>Francavilla di sicilia.</strong> 
                         Formati da sette piccoli borghi disposti lungo l’attuale Strada statale 185, i loro nomi sono: Schisina, Borgo San Giovanni, 
                         Bucceri-Monastero, Pietra Pizzuta, Malfìtana, Piano Torre, MorfiaBorgo. <strong>Schisina</strong> 
@@ -130,5 +133,15 @@
          <dd>Creato da Massimo Petralia</dd>
      </div>
     </div>
+    <script>
+            function myFunction() {
+                var x = document.getElementById('main-menu');
+                if (x.className === 'main-menu') {
+                    x.className += ' responsive';
+                } else {
+                    x.className = 'main-menu';
+                }
+            }
+        </script>
 </body>
 </html>
