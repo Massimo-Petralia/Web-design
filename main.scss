@@ -1,90 +1,82 @@
-@font-face {
-    font-family: 'cagliostro';
-    src: url('font-test/cagliostro-regular-webfont.eot');
-    src: local(':D'),
-    url('font-test/cagliostro-regular-webfont.woff') format('woff'),
-    url('font-test/Cagliostro-Regular.ttf') format('truetype');
+    @font-face {
+        font-family: 'cagliostro';
+        src: url('font-test/cagliostro-regular-webfont.eot');
+        src: local(':D'),
+        url('font-test/cagliostro-regular-webfont.woff') format('woff'),
+        url('font-test/Cagliostro-Regular.ttf') format('truetype');
 
-}
-
-@font-face {
-    font-family: 'nunito-semibold';
-    src: url('font-test/nunito-semibold-webfont.eot');
-    src: local(':D'),
-    url('font-test/nunito-semibold-webfont.woff') format('woff'),
-    url('font-test/nunito-semibold.ttf') format('truetype');
-
-}
-
-
- body{
-    font-family: /*cagliostro,*/ arial, verdana, sans-serif;
-    margin: 0px 195px;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    color: white;
-}
-
-.logo-heading  {
-    //font-family: nunito-semibold;
-    font-weight: bold;
-    letter-spacing: 5px;
-    font-size: 7em;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    
-} 
-.heading-subtitle {
-    letter-spacing: 10px;
-    line-height: 30px;
-    margin-top: 0px;
-    font-weight: lighter;
-}
-
-.logo-text {
-    margin: 40px 0px;
-}
-
-#header{
-    .gradient{
-        //background: linear-gradient(to right, #0a38c2 25%, transparent 70%);
-        position: absolute;
-        width: 100%;
-        height: 132px;
     }
-    position: relative;
-    background-color:SeaGreen  ;
-    display: flex;
-    justify-content: center;
-    //background: url(imm/header-background-1.jpg);
-    background-size: 100% 100%;
-    background-position-x: 0px;
-    
-}
 
-.logo {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    .logo-svg {
-        transform: scale(1.8,1.8);
-        .logo-triangle {
-            fill: none;
-        }
-        margin-right: 30px;
-        padding-bottom: 5px;
-        fill: none;
-        stroke: white;
-        stroke-width: 2px;
-        stroke-linecap: square;
-        stroke-linejoin: bevel;
+    @font-face {
+        font-family: 'nunito-semibold';
+        src: url('font-test/nunito-semibold-webfont.eot');
+        src: local(':D'),
+        url('font-test/nunito-semibold-webfont.woff') format('woff'),
+        url('font-test/nunito-semibold.ttf') format('truetype');
+
     }
-    .text-logo {
+
+    body{
+        font-family: arial, verdana, sans-serif;
+        margin: 0px 195px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        color: white;
     }
- }
+
+    .logo-heading  {
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 7em;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    
+    } 
+    .heading-subtitle {
+        letter-spacing: 10px;
+        line-height: 30px;
+        margin-top: 0px;
+        font-weight: lighter;
+    }
+
+    #header{
+        .gradient{
+            position: absolute;
+            width: 100%;
+            height: 132px;
+        }
+        position: relative;
+        background-color:SeaGreen;
+        display: flex;
+        justify-content: center;
+        background-size: 100% 100%;
+        background-position-x: 0px;
+    
+    }
+
+    .logo {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        .logo-svg {
+            transform: scale(1.8,1.8);
+            .logo-triangle {
+                fill: none;
+            }
+            margin-right: 30px;
+            padding-bottom: 5px;
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+            stroke-linecap: square;
+            stroke-linejoin: bevel;
+        }
+        .text-logo {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
 .navigation{
     display: flex;
@@ -108,15 +100,6 @@
     display: block;
 }
 
-.menu-link:hover{
-    
-    background: tomato;
-}
-
-.modulo-ricerca{
-    margin: 7px 10px auto auto;
-}
-
 .form-item{
     position: absolute;
     right: 0;
@@ -135,33 +118,10 @@
     position: relative;
 }
 
-/*stile navigazione per mobile*/
-@media all and (max-width: 1200px) {
-    /*body {
-        margin: auto;
-    }
-    .navigation {
-        display: flex;
-        flex-direction: column;
-    }
-    .navigation, .main-menu {
-        padding: 0px;
-        flex-direction: column;
-        }
-        .menu-item{
-            padding: 3px 0px;
-            
-        }
-        .modulo-ricerca{
-            display: flex;
-            order: -1;
-            margin-top: 10px;
-        }*/
-       
-            
-            
-        
-        .main-menu {
+/*sTILE NAVIGAZIONE RESPONSIVE PER MOBILE*/
+    @media all and (max-width: 1200px) {
+    
+       .main-menu {
             flex-direction: column;
             width: 100%;
         }
@@ -180,7 +140,10 @@
         }
 
         /*ADD JAVASCRIPT CLASS*/
-        .main-menu.responsive {position: relative; padding-bottom: 10px;}
+        .main-menu.responsive {
+            position: relative; 
+            padding-bottom: 10px;
+        }
         .main-menu.responsive .tasto {
             position: absolute;
             right: 0px;
@@ -191,130 +154,109 @@
             display: block;
             position: relative;
         }
-}
-
-#content{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 0px;
-}
-
-
-.card-container{
-color: black;
-display: flex;
-flex-basis: 100%;
-flex-direction: column;
-margin: 30px;
-box-shadow: -5px 5px 3px grey;
-border-bottom-right-radius: 5px;
-border-bottom-left-radius: 5px;
-}
-
-.tre-col{
-    display: flex;
-    width: 100%;
-    margin: 0px 0px 5px 0px;
-}
-
-.due-col{
-    display: flex;
-    width: 100%;
-    margin: 5px 0px 0px 0px;
-}
-
-.box{
-    display: flex;
-    flex-wrap: wrap;
-    //background: #67B4F8;
-    max-width: 100%;
-    /*width: 100%;*/
-    /*height: 200px;*/
-    max-height: 200px; /*200px-2px=198px*/
-    .img-opacity {
-        opacity: 1;
     }
-    /*.img-opacity:hover {
-        opacity: 1;
-    }*/
-}
 
-.card-content{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.card-link{
-    font-weight: bold;
-    text-decoration: none;
-    background: rgb(63, 58, 58);
-    color: white;
-    align-items: center;
-    margin-top: auto;
-    display: block;
-    text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 5px 0px;
-    //background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
-}
-
-.flex {
-    max-width: 100%;
-}
-
-.border-img-style {
-    //border-bottom-right-radius: 50px 100px;
-    //border-right: 10px solid #0a38c2;
-}
-
-.box-heading {
-    font-style: oblique;
-    position: relative;
-    bottom: 180px;
-    padding: 0px 30px 0px 5px;
-    color: white;
-    background: rgb(63, 58, 58);
-    border-bottom-right-radius: 50px 100px;
-    border-right: solid 5px mediumseagreen;
-    border-bottom: 1px solid mediumseagreen;
-    //background-image: linear-gradient(to right, mediumseagreen 0%, transparent 35%);
-    
-}
-
-.subtitle-box-heading {
-    font-style: oblique;
-    border-bottom: SeaGreen 1px solid;
-    border-left: SeaGreen 15px solid;
-    padding-left: 5px;
-    margin-left: 10px;
-}
-
-/*stile colonne per mobile*/
-@media all and (max-width: 700px) {
-    body {
-        margin: auto;
+    #content{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0px;
     }
-    .tre-col {
-    flex-wrap: wrap;
+
+    .card-container{
+        color: black;
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        margin: 30px;
+        box-shadow: -5px 5px 3px grey;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
+
+    .tre-col{
+        display: flex;
+        width: 100%;
+        margin: 0px 0px 5px 0px;
+    }
+
+    .due-col{
+        display: flex;
+        width: 100%;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        max-height: 200px;
+        .img-opacity {
+            opacity: 1;
+        }
+    }
+
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .card-link{
+        font-weight: bold;
+        text-decoration: none;
+        background: rgb(63, 58, 58);
+        color: white;
+        align-items: center;
+        margin-top: auto;
+        display: block;
+        text-align: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 5px 0px;
+    }
+
+    .box-heading {
+        font-style: oblique;
+        position: relative;
+        bottom: 180px;
+        padding: 0px 30px 0px 5px;
+        color: white;
+        background: rgb(63, 58, 58);
+        border-bottom-right-radius: 50px 100px;
+        border-right: solid 5px mediumseagreen;
+        border-bottom: 1px solid mediumseagreen;
+    }
+
+    .subtitle-box-heading {
+        font-style: oblique;
+        border-bottom: SeaGreen 1px solid;
+        border-left: SeaGreen 15px solid;
+        padding-left: 5px;
+        margin-left: 10px;
+    }
+
+/*STILE COLONNE PER MOBILE*/
+    @media all and (max-width: 700px) {
+        body {
+            margin: auto;
+        }
+        .tre-col {
+            flex-wrap: wrap;
+            }
     }
     
     @media all and (max-width: 550px) {
         body {
             margin: auto;
         }
-    .due-col {
-    flex-wrap: wrap;
-    }
+      .due-col {
+      flex-wrap: wrap;
+      }
     }
     
-
-
-#footer{
-    background: rgb(63, 58, 58);
-}
+    #footer{
+        background: rgb(63, 58, 58);
+    }
 
 /*---------------------CLASSI DI UTILITÀ---------------------------*/
 
@@ -328,4 +270,20 @@ border-bottom-left-radius: 5px;
 
 .justify-text{
     text-align: justify;
+}
+
+.logo-text {
+    margin: 40px 0px;
+}
+
+.menu-link:hover{
+    background: tomato;
+}
+
+.modulo-ricerca{
+    margin: 7px 10px auto auto;
+}
+
+.flex {
+    max-width: 100%;
 }
