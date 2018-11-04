@@ -67,12 +67,13 @@ body {
 }
 
 .navigation {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: mediumseagreen;
-  background-image: -webkit-gradient(linear, right top, left top, from(#0a38c2), color-stop(30%, transparent));
-  background-image: linear-gradient(to left, #0a38c2 0%, transparent 30%);
+  background: #3f3a3a;
+  background-image: -webkit-gradient(linear, right top, left top, from(mediumseagreen), color-stop(30%, transparent));
+  background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
 }
 
 .main-menu {
@@ -84,6 +85,7 @@ body {
   display: flex;
   list-style: none;
   margin: 0px;
+  padding-left: 0px;
 }
 
 .menu-link {
@@ -92,6 +94,11 @@ body {
   text-decoration: none;
   padding: 10px 10px;
   display: block;
+}
+
+.form-item {
+  position: absolute;
+  right: 0;
 }
 
 .menu-link:hover {
@@ -108,29 +115,45 @@ body {
   padding-left: 5px;
 }
 
+.tasto {
+  display: none;
+}
+
 /*stile navigazione per mobile*/
-@media all and (max-width: 700px) {
-  body {
-    margin: 0px auto;
-  }
-  .navigation, .main-menu {
-    padding: 0px;
+@media all and (max-width: 1200px) {
+  .main-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
-  .menu-item {
-    padding: 3px 0px;
+  .main-menu li:not(:first-child) {
+    display: none;
   }
-  .modulo-ricerca {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    margin-top: 10px;
+  .main-menu li.tasto {
+    display: block;
+  }
+  .tasto {
+    position: absolute;
+    right: 0;
+  }
+  .topnav {
+    position: relative;
+  }
+  /*ADD JAVASCRIPT CLASS*/
+  .main-menu.responsive {
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .main-menu.responsive .tasto {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .main-menu.responsive li, .form-item.responsive li {
+    display: block;
+    position: relative;
   }
 }
 
