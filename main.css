@@ -143,7 +143,7 @@ body {
   position: relative;
 }
 
-/*STILE NAVIGAZIONE RESPONSIVE PER MOBILE*/
+/*--------STILE NAVIGAZIONE RESPONSIVE PER MOBILE------------------*/
 @media all and (max-width: 1200px) {
   .main-menu {
     -webkit-box-orient: vertical;
@@ -181,6 +181,7 @@ body {
   }
 }
 
+/*----------------------------------------------------------------*/
 #content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +288,7 @@ body {
   margin-left: 10px;
 }
 
-/*STILE COLONNE PER MOBILE*/
+/*---------------------STILE COLONNE PER MOBILE---------------------*/
 @media all and (max-width: 700px) {
   body {
     margin: auto;

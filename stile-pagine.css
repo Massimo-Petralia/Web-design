@@ -128,10 +128,6 @@ body {
   padding-left: 5px;
 }
 
-.tasto {
-  display: none;
-}
-
 /*--------------------------STILE NAVIGAZIONE RESPONSIVE PER MOBILE------------------------------*/
 @media all and (max-width: 1200px) {
   .main-menu {
@@ -391,6 +387,10 @@ body {
 }
 
 /*---------------------CLASSI DI UTILITÀ---------------------------*/
+.tasto {
+  display: none;
+}
+
 .pd-l-20px {
   padding-left: 20px;
 }
