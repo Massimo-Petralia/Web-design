@@ -196,7 +196,7 @@
         </div>
     </div>
     <script>
-        function myFunction() {
+       function myFunction() {
             var x = document.getElementById('main-menu');
             if (x.className === 'main-menu') {
                 x.className += ' responsive';
@@ -205,15 +205,26 @@
             }
         }
 
-        isColor = false;
+
+        
+        /*isColor = false;
         function collapse(event) {
             card = event.target.parentNode;
+            
             if (isColor === false) {
                 card.style.height = "500px";
+                var box = document.getElementsByClassName('card-content');
+                console.log(box);
+                if (box.className === 'card-content') {
+                    box.className += ' collapse';
+                    debugger
+                } else {
+                    box.className = 'card-content';
+                }
                // card.style.backgroundImage = "linear-gradient(to top, black 0%, transparent 30%)";
                 isColor = true;
             } else {
-                debugger
+                //debugger
                 card.style.height = "100px";
                // card.style.backgroundImage = "linear-gradient(to top, black 0%, transparent 30%)";
                 isColor = false;
@@ -233,7 +244,7 @@
             //    } else {
             //        isCollapse = true;
             //    }
-        }
+        }*/
     </script>
 </body>
 
