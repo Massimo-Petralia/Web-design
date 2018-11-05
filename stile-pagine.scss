@@ -226,9 +226,8 @@
 
     .iblei-section-style {
         padding-left: 10px;
-        border-left: 15px solid red;
-        border-bottom: 1px solid red;
-        background-image: linear-gradient(to right, red 0%, transparent 5%);
+        border-left: 15px solid #3c3b89;
+        border-bottom: 1px solid #3c3b89;
         margin-left: 20px;
     }
 
@@ -243,6 +242,7 @@
         box-shadow: -5px 5px 3px grey;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
+        
     }
 
     .due-col{
@@ -383,10 +383,30 @@
     z-index: 1;
 }
 
+.margin-color-background-shadow-card-1{
+    background: rgb(63, 58, 58);
+    box-shadow: 0px 5px 3px grey;
+    color: white;
+    margin: 15px;
+}
+
+.no-border {
+    border: none;
+}
+
+.line{
+    flex: 1;
+    height: 2px;
+    background: grey;
+    border-radius: 100px;
+    margin: 10px auto;
+}
+
 /*COLORE BORDO ETICHETTA PAGINE*/
 
 .nebrodi-title-style {
     border-color: orange;
+    box-shadow: 0px
 }
 
 .peloritani-title-style {
@@ -402,7 +422,7 @@
 }
 
 .iblei-title-style {
-    border-color: red;
+    border-color: #3c3b89;
 }
 
 /*-----------------------------*/
