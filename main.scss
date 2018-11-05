@@ -160,12 +160,14 @@
 /*----------------------------------------------------------------*/    
 
     #content{
+        
         display: flex;
         flex-wrap: wrap;
         margin: 10px 0px;
     }
 
     .card-container{
+        
         position: relative;
         color: black;
         display: flex;
@@ -183,6 +185,7 @@
         display: flex;
         width: 100%;
         margin: 0px 0px 5px 0px;
+        
     }
 
     .due-col{
@@ -193,6 +196,7 @@
 
     .box{
         //box-shadow: -5px 0px 3px grey;
+        
         display: flex;
         flex-wrap: wrap;
         max-width: 100%;
@@ -307,7 +311,8 @@
 }
 
 .flex {
-    //max-width: 100%;
+    width: 100%;
+    
 }
 
 .collapse-container{
@@ -317,6 +322,6 @@
     border-bottom-right-radius: 5px;
     //position: relative;
     //display: flex;
-    
+    width: 100%;
     
 }
