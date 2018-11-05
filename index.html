@@ -7,6 +7,9 @@
     <title>Home-sito</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+     
+    </style>
 
 </head>
 
@@ -67,7 +70,8 @@
                         <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
                     </div>
                 </div> -->
-                <div class="card-container card-1">
+                <div class="collapse-container" style="display: inline-table;">
+                    <div class="card-container card-1">
                     <div class="box box-1">
                         <img class="flex img-opacity border-img-style" src="imm/grotta-lauro.jpg" title="Cavolicello"
                             alt="">
@@ -92,16 +96,18 @@
                         </p>
                         <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
                     </div>
-                </div>
-                <div class="card-container card-2">
-                    <div class="box box-2">
-                        <img class="flex img-opacity border-img-style" src="imm/cavolicello.jpg" title="Cavolicello"
-                            alt="">
-                        <h1 class="box-heading">Cavolicello</h1>
                     </div>
-                    <div class="card-content">
-                        <h2 class="subtitle-box-heading">Un'erba commestibile selvaticha</h2>
-                        <p class="pd-l-20px pd-r-20px justify-text">Diffuso nell’Italia centro meridionale , dal mare e
+                </div>
+
+                <div class="collapse-container" style="display: inline-table;">
+                    <div class="card-container card-2">
+                        <div class="box box-2">
+                            <img class="flex img-opacity border-img-style" src="imm/cavolicello.jpg" title="Cavolicello" alt="">
+                            <h1 class="box-heading">Cavolicello</h1>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="subtitle-box-heading">Un'erba commestibile selvaticha</h2>
+                            <p class="pd-l-20px pd-r-20px justify-text">Diffuso nell’Italia centro meridionale , dal mare e
                             fino ai 1200 m di quota,
                             il Cavolicello è una erbacea annuale – biennale che cresce intorno ai 70 cm
                             di altezza. Si incontra spesso lungo i margini delle strade, un po' meno
@@ -115,11 +121,14 @@
                             <blockquote>
                                 <cite>Fabio Morreale – Piante spontanee alimentari in sicilia</cite>
                             </blockquote>
-                        </p>
-                        <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
+                            </p>
+                            <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card-container card-3">
+
+                <div class="collapse-container" style="display: inline-table;">
+                    <div class="card-container card-3">
                     <div class="box box-3">
                         <img class="flex img-opacity border-img-style" src="imm/funghi-piccoli.jpg" title="Chiodini"
                             alt="">
@@ -141,9 +150,12 @@
                         </p>
                         <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
                     </div>
+                    </div>
                 </div>
             </section>
+
             <section class="due-col">
+                    <div class="collapse-container" style="display: inline-table;">
                 <div class="card-container card-4">
                     <div class="box box-4">
                         <img class="flex img-opacity border-img-style" src="imm/fungo-carrubo.jpg" title="particolare Fungo di Carrubbo"
@@ -165,6 +177,8 @@
                         <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
                     </div>
                 </div>
+            </div>
+            <div class="collapse-container" style="display: inline-table;">
                 <div class="card-container card-5">
                     <div class="box box-5">
                         <img class="flex img-opacity border-img-style" src="imm/pasta-sarde.jpg" title="Pasta con le sarde"
@@ -189,12 +203,14 @@
                         <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">Leggi articolo</a>
                     </div>
                 </div>
+            </div>
             </section>
         </div>
         <div id="footer">
             <dd>Creato da Massimo Petralia</dd>
         </div>
     </div>
+   
     <script>
        function myFunction() {
             var x = document.getElementById('main-menu');
@@ -207,31 +223,54 @@
 
 
         
-        /*isColor = false;
+        isCollapse = true;
+        var oldelement = document.getElementsByClassName('card-content')[0];
         function collapse(event) {
-            card = event.target.parentNode;
-            
-            if (isColor === false) {
-                card.style.height = "500px";
-                var box = document.getElementsByClassName('card-content');
-                console.log(box);
-                if (box.className === 'card-content') {
-                    box.className += ' collapse';
+          /*   if (oldelement !== event.target.parentNode) {
+                if (isCollapse) {
                     debugger
-                } else {
-                    box.className = 'card-content';
+                oldelement.style.height = '500px';
+                oldelement = event.target.parentNode;
+                isCollapse = false;
+                return;
                 }
-               // card.style.backgroundImage = "linear-gradient(to top, black 0%, transparent 30%)";
-                isColor = true;
-            } else {
-                //debugger
-                card.style.height = "100px";
-               // card.style.backgroundImage = "linear-gradient(to top, black 0%, transparent 30%)";
-                isColor = false;
+                if (!isCollapse)  {
+                oldelement.style.height = '250px';
+                oldelement = event.target.parentNode;
+                isCollapse = true;
+                return;
+                }
                 
-            }
-            
+            } 
+            if (oldelement === event.target.parentNode) {
+                if (isCollapse) {
+                    oldelement.style.height = '500px';
+                    isCollapse = false;
+                    return;
+                }
+                if (!isCollapse) {
+                    oldelement.style.height = '250px';
+                    isCollapse = true;
+                    return;
+                }
+            } */
 
+
+            ele = event.target.parentNode;
+            
+                if (isCollapse) {
+                ele.style.height = '500px';
+                isCollapse = false;
+                return;
+                }
+                if (!isCollapse)  {
+                ele.style.height = '250px';
+                isCollapse = true;
+                return;
+                }
+            
+           
+        }
             
             
 
@@ -244,7 +283,7 @@
             //    } else {
             //        isCollapse = true;
             //    }
-        }*/
+        
     </script>
 </body>
 
