@@ -103,6 +103,14 @@ body {
   padding-left: 0px;
 }
 
+.menu-link {
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
 /*-------BASE BLOCK COLLAPSE CARDS---------*/
 .card-container {
   border: 1px solid red;
