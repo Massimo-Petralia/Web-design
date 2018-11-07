@@ -4,7 +4,6 @@
 /*-------BASE BLOCK COLLAPSE CARDS---------*/
 
 .card-container{
-     
     border: 1px solid red;
     display: flex;
     width: 100%;
@@ -12,6 +11,8 @@
   }
   
   .card{
+    box-shadow: -5px 5px 3px grey;
+    margin: 1.5%;
     border: 1px solid blue;
     display: flex;
     position:relative;
@@ -20,7 +21,7 @@
   }
   
   .box{
-    box-shadow: -5px 5px 3px grey;  
+    box-shadow: -5px 5px 3px grey;
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
@@ -28,7 +29,7 @@
   }
   
   .card-content{
-    box-shadow: -5px 5px 3px grey;
+   
     background: green;
     position: relative;
     display: flex;
@@ -47,5 +48,9 @@
     margin-top: auto;
     text-align: center;
   }
+  
+  
+  
+  
 
   /*------- END BLOCK COLLAPSE CARDS---------*/

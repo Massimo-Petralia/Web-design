@@ -9,6 +9,9 @@
 }
 
 .card {
+  -webkit-box-shadow: -5px 5px 3px grey;
+          box-shadow: -5px 5px 3px grey;
+  margin: 1.5%;
   border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,8 +38,6 @@
 }
 
 .card-content {
-  -webkit-box-shadow: -5px 5px 3px grey;
-          box-shadow: -5px 5px 3px grey;
   background: green;
   position: relative;
   display: -webkit-box;
