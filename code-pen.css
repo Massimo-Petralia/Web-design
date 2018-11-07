@@ -82,6 +82,15 @@ body {
           flex-direction: column;
 }
 
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #3f3a3a;
+  background-image: -webkit-gradient(linear, right top, left top, from(mediumseagreen), color-stop(30%, transparent));
+  background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
+}
+
 /*-------BASE BLOCK COLLAPSE CARDS---------*/
 .card-container {
   border: 1px solid red;
