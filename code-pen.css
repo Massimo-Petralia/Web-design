@@ -1,3 +1,18 @@
+body {
+  font-family: arial, verdana, sans-serif;
+  margin: 0px 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+}
+
+/*-------BLOCK COLLAPSE CARDS---------*/
 .card-container {
   border: 1px solid red;
   display: -webkit-box;
@@ -43,8 +58,8 @@
           flex-direction: column;
   overflow: hidden;
   height: 200px;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .card-link {
@@ -56,4 +71,6 @@
   margin-top: auto;
   text-align: center;
 }
+
+/*------- END BLOCK COLLAPSE CARDS---------*/
 /*# sourceMappingURL=code-pen.css.map */

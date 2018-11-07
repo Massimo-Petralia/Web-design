@@ -1,3 +1,15 @@
+body{
+    font-family: arial, verdana, sans-serif;
+    margin: 0px 195px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+/*-------BLOCK COLLAPSE CARDS---------*/
+
 .card-container{
     border: 1px solid red;
     display: flex;
@@ -27,7 +39,7 @@
     flex-direction: column;
     overflow: hidden;
     height: 200px;
-    transition: 2s;
+    transition: 500ms;
   }
   
   .card-link{
@@ -39,3 +51,5 @@
     margin-top: auto;
     text-align: center;
   }
+
+  /*------- END BLOCK COLLAPSE CARDS---------*/
