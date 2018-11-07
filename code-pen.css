@@ -12,6 +12,14 @@ body {
   color: white;
 }
 
+.logo-heading {
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 7em;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
 /*-------BASE BLOCK COLLAPSE CARDS---------*/
 .card-container {
   border: 1px solid red;
