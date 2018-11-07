@@ -207,7 +207,7 @@ body {
 }
 
 .card-content {
-  background: green;
+  background: seagreen;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,6 +235,7 @@ body {
   text-align: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding: 5px 0px;
 }
 
 /*------- END BLOCK COLLAPSE CARDS---------*/
