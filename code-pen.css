@@ -73,7 +73,7 @@ body {
   fill: none;
 }
 
-.logo .text-logo {
+.logo .logo-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,6 +81,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 40px 0px;
 }
 
 .navigation {
