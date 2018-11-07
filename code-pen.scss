@@ -151,6 +151,7 @@ body{
     }
   
     .card{
+        color: black;
         box-shadow: -5px 5px 3px grey;
         margin: 1.5%;
         border: 1px solid blue;
@@ -171,7 +172,7 @@ body{
     }
   
     .card-content{
-        background: seagreen;
+        //background: seagreen;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -180,6 +181,14 @@ body{
         transition: 500ms;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+    }
+
+    .card-content-subtitle{
+        font-style: oblique;
+        border-bottom: SeaGreen 1px solid;
+        border-left: SeaGreen 15px solid;
+        padding-left: 5px;
+        margin-left: 10px;
     }
   
     .card-link{
