@@ -226,6 +226,7 @@ body {
   background: #3f3a3a;
   color: white;
   font-weight: bold;
+  text-decoration: none;
   position: absolute;
   bottom: 0px;
   display: block;
