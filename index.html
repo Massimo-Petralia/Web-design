@@ -48,7 +48,7 @@
         </nav>
        <div id="content">
         <div class="card-container" >
-            <div>
+            <div class="flexsible-div">
               <div class="card card-1">
                 <div class="box box-1">
                   <img class="immagine"  src="imm/grotta-lauro.jpg" alt="" title="">
@@ -65,7 +65,7 @@
               </div>
              </div>
             </div>
-            <div>
+            <div class="flexsible-div">
               <div class="card card-2">
                 <div class="box box-2">
                   <img class="immagine" src="imm/cavolicello.jpg" alt="" title="">
@@ -76,13 +76,14 @@
                 <p class="justify-text">
                         « Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.« Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius autem adipisci laboriosam facere, deleniti quo enim inventore, numquam non harum ad dolor perspiciatis facilis nobis. Blanditiis illo illum voluptas enim.
                   <blockquote><cite>lorem</cite></blockquote>
                 </p>
                 <a class="card-link" href="javascript:void(0)" onclick="collapse(event)">leggi articolo</a>
               </div>
              </div>
             </div>
-            <div>
+            <div class="flexsible-div">
               <div class="card card-3">
                 <div class="box box-3">
                   <img class="immagine" src="imm/funghi-piccoli.jpg" alt="" title="">
@@ -101,7 +102,7 @@
             </div>
           </div>
           <div class="card-container" >
-            <div>
+            <div class="flexsible-div">
               <div class="card card-4">
                 <div class="box box-4">
                   <img class="immagine" src="imm/fungo-carrubo.jpg" alt="" title="">
@@ -118,7 +119,7 @@
               </div>
              </div>
             </div>
-            <div>
+            <div class="flexsible-div">
               <div class="card card-5">
                 <div class="box box-5">
                   <img class="immagine" src="imm/pasta-sarde.jpg" alt="" title="">
@@ -151,17 +152,24 @@
            }
        }
 
-       isCollapse = true;
-        var oldelement = document.getElementsByClassName('card-content')[0];
         function collapse(event) {
-            ele = event.target.parentNode;
-            heigthTargetOffset = ele.offsetHeight;
-            heigthTargetscroll = ele.scrollHeight;
-             if (heigthTargetOffset > 200) {
-                ele.style.height = '200px';
+            cardContent = event.target.parentNode;
+            card = cardContent.parentNode;
+            p = Array.from(cardContent.children)[1];
+            quote = Array.from(cardContent.children)[2];
+            heigthP = p.getBoundingClientRect().bottom;
+            heigthQuote = quote.getBoundingClientRect().bottom; 
+            heightCard = card.getBoundingClientRect().bottom;
+            overflow = (heigthP + heigthQuote) - heightCard;
+
+            heigthTargetOffset = card.offsetHeight;
+            heigthTargetscroll = card.scrollHeight;
+             if (overflow > heightCard) {
+                card.style.height = overflow + 'px';
                 return;
             } else {
-                ele.style.height = heigthTargetscroll + 'px';
+                card.style.height = '400px';
+                
                 return
             }
         }

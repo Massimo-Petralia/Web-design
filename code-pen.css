@@ -196,6 +196,7 @@ body {
       flex-basis: 100%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 400px;
 }
 
 .box {
@@ -211,7 +212,6 @@ body {
 }
 
 .card-content {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,7 +220,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  height: 200px;
   -webkit-transition: 500ms;
   transition: 500ms;
   border-bottom-left-radius: 5px;
@@ -280,6 +279,13 @@ body {
 
 .menu-link:hover {
   background: tomato;
+}
+
+.flexsible-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*provvisoria*/
 }
 
 /*--------------------------------------------------*/

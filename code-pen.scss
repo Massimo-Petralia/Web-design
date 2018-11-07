@@ -161,6 +161,7 @@ body{
         flex-basis: 100%;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+        height: 400px;
     }
   
     .box{
@@ -172,11 +173,11 @@ body{
     }
   
     .card-content{
-        position: relative;
+        // position: relative;
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        height: 200px;
+        //height: 200px;
         transition: 500ms;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -238,4 +239,7 @@ body{
     background: tomato;
 }
 
+.flexsible-div{
+    display: flex;/*provvisoria*/
+}
 /*--------------------------------------------------*/
