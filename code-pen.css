@@ -255,5 +255,9 @@ body {
           flex: auto;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 /*--------------------------------------------------*/
 /*# sourceMappingURL=code-pen.css.map */
