@@ -247,4 +247,13 @@ body {
 #footer {
   background: #3f3a3a;
 }
+
+/*--------------CLASSI DI UTILITÀ------------------*/
+.immagine {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+/*--------------------------------------------------*/
 /*# sourceMappingURL=code-pen.css.map */
