@@ -225,6 +225,7 @@ body {
 .card-link {
   background: #3f3a3a;
   color: white;
+  font-weight: bold;
   position: absolute;
   bottom: 0px;
   display: block;
