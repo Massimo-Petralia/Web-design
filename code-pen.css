@@ -20,6 +20,13 @@ body {
   margin-top: 40px;
 }
 
+.heading-subtitle {
+  letter-spacing: 10px;
+  line-height: 30px;
+  margin-top: 0px;
+  font-weight: lighter;
+}
+
 /*-------BLOCK COLLAPSE CARDS---------*/
 .card-container {
   border: 1px solid red;
