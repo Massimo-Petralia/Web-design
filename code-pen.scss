@@ -156,7 +156,9 @@ body{
         display: flex;
         position:relative;
         flex-direction: column;
-        flex-basis: 100%
+        flex-basis: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
   
     .box{
@@ -175,6 +177,8 @@ body{
         overflow: hidden;
         height: 200px;
         transition: 500ms;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
   
     .card-link{

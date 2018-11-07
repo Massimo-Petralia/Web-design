@@ -192,6 +192,8 @@ body {
           flex-direction: column;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .box {
@@ -220,6 +222,8 @@ body {
   height: 200px;
   -webkit-transition: 500ms;
   transition: 500ms;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .card-link {
