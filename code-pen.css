@@ -1,16 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'cagliostro';
-  src: url("font-test/cagliostro-regular-webfont.eot");
-  src: local(":D"), url("font-test/cagliostro-regular-webfont.woff") format("woff"), url("font-test/Cagliostro-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'nunito-semibold';
-  src: url("font-test/nunito-semibold-webfont.eot");
-  src: local(":D"), url("font-test/nunito-semibold-webfont.woff") format("woff"), url("font-test/nunito-semibold.ttf") format("truetype");
-}
-
 body {
   font-family: arial, verdana, sans-serif;
   margin: 0px 195px;
@@ -42,7 +30,7 @@ body {
 
 #header {
   position: relative;
-  background-color: SeaGreen;
+  background-color: mediumseagreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +73,7 @@ body {
   fill: none;
 }
 
-.logo .text-logo {
+.logo .logo-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,12 +81,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 40px 0px;
 }
 
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   background: #3f3a3a;
   background-image: -webkit-gradient(linear, right top, left top, from(mediumseagreen), color-stop(30%, transparent));
   background-image: linear-gradient(to left, mediumseagreen 0%, transparent 30%);
@@ -139,11 +129,6 @@ body {
   display: none;
 }
 
-.navigation {
-  position: relative;
-  /*ripetuta*/
-}
-
 /*--------STILE NAVIGAZIONE RESPONSIVE PER MOBILE------------------*/
 @media all and (max-width: 1200px) {
   .main-menu {
@@ -156,7 +141,7 @@ body {
   .main-menu li:not(:first-child) {
     display: none;
   }
-  .main-menu li.tasto {
+  .main-menu li.tasto-menù {
     display: block;
   }
   .tasto-menù {
@@ -171,7 +156,7 @@ body {
     position: relative;
     padding-bottom: 10px;
   }
-  .main-menu.responsive .tasto {
+  .main-menu.responsive .tasto-menù {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -183,34 +168,9 @@ body {
 }
 
 /*----------------------------------------------------------------*/
-#content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 10px 0px;
-}
-
+/*-------BASE BLOCK COLLAPSE CARDS---------*/
 .card-container {
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 30px;
-  -webkit-box-shadow: -5px 5px 3px grey;
-          box-shadow: -5px 5px 3px grey;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.tre-col {
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,15 +178,30 @@ body {
   margin: 0px 0px 5px 0px;
 }
 
-.due-col {
+.card {
+  color: black;
+  -webkit-box-shadow: -5px 5px 3px grey;
+          box-shadow: -5px 5px 3px grey;
+  margin: 1.5%;
+  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin: 5px 0px 0px 0px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 400px;
 }
 
 .box {
+  -webkit-box-shadow: -5px 5px 3px grey;
+          box-shadow: -5px 5px 3px grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,10 +209,6 @@ body {
       flex-wrap: wrap;
   max-width: 100%;
   max-height: 200px;
-}
-
-.box .img-opacity {
-  opacity: 1;
 }
 
 .card-content {
@@ -248,98 +219,75 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  overflow: hidden;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.img-label {
+  position: absolute;
+  font-style: oblique;
+  background: #3f3a3a;
+  color: white;
+  padding: 0px 30px 0px 5px;
+  border-bottom-right-radius: 50px 100px;
+  border-right: solid 5px tomato;
+  border-bottom: 1px solid tomato;
+}
+
+.card-content-subtitle {
+  font-style: oblique;
+  border-bottom: mediumseagreen 1px solid;
+  border-left: mediumseagreen 15px solid;
+  padding-left: 5px;
+  margin-left: 10px;
 }
 
 .card-link {
-  font-weight: bold;
-  text-decoration: none;
   background: #3f3a3a;
   color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: auto;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0px;
   display: block;
+  width: 100%;
+  margin-top: auto;
   text-align: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 5px 0px;
 }
 
-.box-heading {
-  font-style: oblique;
-  position: relative;
-  bottom: 180px;
-  padding: 0px 30px 0px 5px;
-  color: white;
-  background: #3f3a3a;
-  border-bottom-right-radius: 50px 100px;
-  border-right: solid 5px mediumseagreen;
-  border-bottom: 1px solid mediumseagreen;
-}
-
-.subtitle-box-heading {
-  font-style: oblique;
-  border-bottom: SeaGreen 1px solid;
-  border-left: SeaGreen 15px solid;
-  padding-left: 5px;
-  margin-left: 10px;
-}
-
-/*---------------------STILE COLONNE PER MOBILE---------------------*/
-@media all and (max-width: 700px) {
-  body {
-    margin: auto;
-  }
-  .tre-col {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media all and (max-width: 550px) {
-  body {
-    margin: auto;
-  }
-  .due-col {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
+/*------- END BLOCK COLLAPSE CARDS---------*/
 #footer {
   background: #3f3a3a;
 }
 
-/*---------------------CLASSI DI UTILITÀ---------------------------*/
-.pd-l-20px {
-  padding-left: 20px;
-}
-
-.pd-r-20px {
-  padding-right: 20px;
+/*--------------CLASSI DI UTILITÀ------------------*/
+.immagine {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  max-width: 100%;
 }
 
 .justify-text {
   text-align: justify;
 }
 
-.logo-text {
-  margin: 40px 0px;
-}
-
 .menu-link:hover {
   background: tomato;
 }
 
-.modulo-ricerca {
-  margin: 7px 10px auto auto;
+.flexsible-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*provvisoria*/
 }
 
-.flex {
-  max-width: 100%;
-}
-/*# sourceMappingURL=main.css.map */
+/*--------------------------------------------------*/
+/*# sourceMappingURL=code-pen.css.map */

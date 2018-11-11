@@ -110,12 +110,12 @@
     outline: none;
     padding-left: 10px;
 }
-.tasto {
+.tasto-menù {
     display: none;
 }
 
 .navigation {
-    position: relative;
+    position: relative;/*ripetuta*/
 }
 
 /*--------STILE NAVIGAZIONE RESPONSIVE PER MOBILE------------------*/
@@ -132,7 +132,7 @@
         .main-menu li.tasto {
             display: block;
         }
-        .tasto {
+        .tasto-menù {
             position: absolute;
             right: 0;
         }
