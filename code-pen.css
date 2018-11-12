@@ -125,6 +125,10 @@ body {
   padding-left: 10px;
 }
 
+.modulo-ricerca {
+  margin: 8px 10px auto auto;
+}
+
 .tasto-menù {
   display: none;
 }
@@ -169,108 +173,102 @@ body {
 
 /*----------------------------------------------------------------*/
 /*-------BASE BLOCK COLLAPSE CARDS---------*/
-.card-container {
-  border: 1px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.collapsible {
+  background: #3f3a3a;
+  color: #444;
+  padding: 5px;
   width: 100%;
-  margin: 0px 0px 5px 0px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.relative {
+  position: relative;
+  -webkit-box-shadow: -3px 3px 5px grey;
+          box-shadow: -3px 3px 5px grey;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #f1f1f1;
+}
+
+.toggle, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.active {
+  background: mediumseagreen;
+}
+
+.content {
+  max-height: 100px;
+  padding: 18px;
+  padding-bottom: 45px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  -webkit-transition: max-height 0.5s  ease-out;
+  transition: max-height 0.5s  ease-out;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: justify;
+  background: -webkit-gradient(linear, left bottom, left top, from(grey), color-stop(35%, #f1f1f1));
+  background: linear-gradient(to top, grey 0%, #f1f1f1 35%);
 }
 
 .card {
-  color: black;
-  -webkit-box-shadow: -5px 5px 3px grey;
-          box-shadow: -5px 5px 3px grey;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 1.5%;
-  border: 1px solid blue;
+}
+
+.card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  height: 400px;
-}
-
-.box {
-  -webkit-box-shadow: -5px 5px 3px grey;
-          box-shadow: -5px 5px 3px grey;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 100%;
-  max-height: 200px;
-}
-
-.card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.img-label {
-  position: absolute;
-  font-style: oblique;
-  background: #3f3a3a;
-  color: white;
-  padding: 0px 30px 0px 5px;
-  border-bottom-right-radius: 50px 100px;
-  border-right: solid 5px tomato;
-  border-bottom: 1px solid tomato;
-}
-
-.card-content-subtitle {
-  font-style: oblique;
-  border-bottom: mediumseagreen 1px solid;
-  border-left: mediumseagreen 15px solid;
-  padding-left: 5px;
-  margin-left: 10px;
-}
-
-.card-link {
-  background: #3f3a3a;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  position: absolute;
-  bottom: 0px;
-  display: block;
-  width: 100%;
-  margin-top: auto;
-  text-align: center;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 5px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: black;
 }
 
 /*------- END BLOCK COLLAPSE CARDS---------*/
+@media all and (max-width: 1200px) {
+  body {
+    margin: 0;
+  }
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #footer {
   background: #3f3a3a;
+  padding: 10px;
 }
 
 /*--------------CLASSI DI UTILITÀ------------------*/
-.immagine {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+.label {
+  position: absolute;
+  top: 0px;
+  background: #3f3a3a;
+  padding-right: 20px;
+  padding-left: 5px;
+  color: white;
+  border-bottom-right-radius: 50px 100px;
+  border-right: 10px solid tomato;
+}
+
+.max-width {
   max-width: 100%;
 }
 
@@ -287,6 +285,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   /*provvisoria*/
+}
+
+.h3-style {
+  text-align: start;
+  border-bottom: 1px solid tomato;
+  border-left: 10px solid tomato;
+  padding-left: 5px;
 }
 
 /*--------------------------------------------------*/
