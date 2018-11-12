@@ -1,14 +1,12 @@
-# touristic-site
+# Web design
 
-## Layout-pages
-![pages-layout](https://user-images.githubusercontent.com/44479460/47819942-3e7e6280-dd5c-11e8-9ef6-902e0abc8f24.png)
+## Collapsable cards
 
-## logo svg (code)
-![logo-svg-code](https://user-images.githubusercontent.com/44479460/47608173-f1cc1c00-da29-11e8-8550-58adafd038ac.png)
-## logo svg
-![logo-svg](https://user-images.githubusercontent.com/44479460/47608185-132d0800-da2a-11e8-9993-dd4b7b3ea7dd.png)
+![collapse-card](https://user-images.githubusercontent.com/44479460/48355502-79559400-e694-11e8-920e-32ae38f51874.gif)
 
+## Responsive navbar
+![responsive-layout](https://user-images.githubusercontent.com/44479460/48355792-20d2c680-e695-11e8-81c3-d4fc56b03ea7.gif)
 
-##  CSS Flexbox-layout on index.html (see main.css for css code)
-![screenshot](https://user-images.githubusercontent.com/44479460/47560631-14badb00-d919-11e8-88a9-db2d7a395065.jpg)
+## Flexsible layout
+![flexsible-layout](https://user-images.githubusercontent.com/44479460/48356137-dbfb5f80-e695-11e8-9db8-0d0a4eef54bb.gif)
 
