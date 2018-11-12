@@ -1,13 +1,9 @@
 # touristic-site
 
+## Collapsable cards
 
+![collapse-card](https://user-images.githubusercontent.com/44479460/48355502-79559400-e694-11e8-920e-32ae38f51874.gif)
 
-## Home-style
-![home-style](https://user-images.githubusercontent.com/44479460/47934020-7a3d3780-ded6-11e8-9b34-dab46ad5e5f8.png)
-
-
-## Layout-pages
-![pages-layout](https://user-images.githubusercontent.com/44479460/47819942-3e7e6280-dd5c-11e8-9ef6-902e0abc8f24.png)
 
 ## logo svg (code)
 ![logo-svg-code](https://user-images.githubusercontent.com/44479460/47608173-f1cc1c00-da29-11e8-8550-58adafd038ac.png)
