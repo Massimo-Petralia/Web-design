@@ -1,6 +1,6 @@
 # touristic-site
 
-![test-gif](https://user-images.githubusercontent.com/44479460/48345117-6385a600-e677-11e8-9656-fcecfa7626a1.gif)
+
 
 ## Home-style
 ![home-style](https://user-images.githubusercontent.com/44479460/47934020-7a3d3780-ded6-11e8-9b34-dab46ad5e5f8.png)
